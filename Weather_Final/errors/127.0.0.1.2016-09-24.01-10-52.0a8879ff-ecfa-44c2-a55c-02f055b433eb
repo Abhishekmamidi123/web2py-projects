@@ -1,0 +1,792 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'id1' is not defined"
+p3
+sS'layer'
+p4
+S'F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\views\\default/temperature.html'
+p5
+sS'code'
+p6
+S'response.write(\'<html>\\r\\n    <meta name="viewport" content="width=device-width, initial-scale=1">\\r\\n    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">\\r\\n    <style>\\r\\n        .w3-theme{\\r\\n            background-color:orange;\\r\\n        }\\r\\n        div.roll{\\r\\n            background-color: yellow;\\r\\n            font-size:15px;\\r\\n            color:red;\\r\\n        }\\r\\n        div.assg {\\r\\n            background-color: black;\\r\\n            color: white;\\r\\n            margin: 0px 0 0 0;\\r\\n            padding: 0px;\\r\\n        }\\r\\n        div.assd {\\r\\n            background-color: black;\\r\\n            float : left;\\r\\n            color: white;\\r\\n            margin: 0px 0 10px 0;\\r\\n            padding: 0px;\\r\\n            width: 140px;\\r\\n            height: 360px;\\r\\n        }\\r\\n        div.news {\\r\\n            margin: 20px 0 20px 0;\\r\\n            float : right;\\r\\n            text-align:center;\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 40px;\\r\\n            width: 270px;\\r\\n            height: 690px;\\r\\n        }\\r\\n        div.foot{\\r\\n            background-color:black;\\r\\n            text-align:center;\\r\\n            margin: 570px 0 0 0;\\r\\n        }\\r\\n        div.l{\\r\\n            float:right;\\r\\n        }\\r\\n        #head{\\r\\n            position: relative;\\r\\n            background-color:#73e600;\\r\\n            color:#800000;\\r\\n            margin: 0 0 0 0;\\r\\n            padding: 18px;\\r\\n            text-align:center;\\r\\n            font-size:25px;\\r\\n            font-style:italic;\\r\\n            text-shadow:1px 1px 4px black;\\r\\n        }\\r\\n        #head img\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n            left: 5px;\\r\\n        }\\r\\n        #table {\\r\\n            border-collapse: collapse;\\r\\n            width: 50%;\\r\\n        }\\r\\n        #td {\\r\\n            text-align: left;\\r\\n            padding: 2px;\\r\\n        }\\r\\n        #tr:nth-child(even){background-color: #f2f2f2}\\r\\n        #th {\\r\\n            text-align: left;\\r\\n            padding: 2px;\\r\\n            background-color: #4CAF50;\\r\\n            color: white;\\r\\n        }\\r\\n    </style>\\r\\n    <body class="w3-theme">\\r\\n        <div class="assg">\\r\\n            <div id="head">\\r\\n                <img src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" align="top-left" width="75" height="60">\\r\\n                Weather Station\\r\\n            </div>\\r\\n            <table>\\r\\n                <tr>\\r\\n                    <td>&nbsp</td>\\r\\n                </tr>\\r\\n                <tr>\\r\\n                    <td width="1300">\\r\\n                        <div class="w3-dropdown-hover">\\r\\n                            <form action="index">\\r\\n                                <button class="w3-btn w3-black">Home</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="s" >\\r\\n                                <button class="w3-btn w3-black">SignUp</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td>\\r\\n                        <a href="http://www.facebook.com" target="_blank">\\r\\n                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30">\\r\\n                        </a>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td>\\r\\n                        <a href="http://www.twitter.com" target="_blank">\\r\\n                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">\\r\\n                        </a>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td>\\r\\n                        <a href="http://www.gmail.com" target="_blank">\\r\\n                            <img src="http://files.technobezz.com/files/uploads/2016/03/original.jpg" alt="gmail" width="30" height="30">\\r\\n                        </a>\\r\\n                    </td>\\r\\n                </tr>\\r\\n            </table>\\r\\n        </div>\\r\\n        <div class="roll">\\r\\n            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">\\r\\n                Welcome to Weather Station!!</font>\\r\\n            </marquee>\\r\\n        </div>\\r\\n        <div class="assd">\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Temprature</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Pressure</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Humidity</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Rainfall</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Others</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Contact Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">About Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n        </div>\\r\\n        <div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-xxx inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        \\r\\n        </div>\\r\\n    \\r\\n        <!--div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        </div-->\\r\\n        <center>\\r\\n            <br>\\r\\n            <br>\\r\\n            <br>\\r\\n            <br><br>\\r\\n        <table id="table">\\r\\n        <tr id="tr">\\r\\n            <th id="th">Place</th>\\r\\n            <th id="th">Low Temparature</th>\\r\\n            <th id="th">High Temparature</th>\\r\\n        </tr>\\r\\n        \', escape=False)\nfor i in id1:\n    response.write(\'\\r\\n        <tr id="tr">\\r\\n            <td id="td">\', escape=False)\n    response.write(i.place)\n    response.write(\'</td>\\r\\n            <td id="td">\', escape=False)\n    response.write(i.low_temparature)\n    response.write(\'C</td>\\r\\n            <td id="td">\', escape=False)\n    response.write(i.high_temparature)\n    response.write(\'C</td>\\r\\n        </tr>\\r\\n        \', escape=False)\n    pass\nresponse.write(\'\\r\\n        </table>\\r\\n        </center>\\r\\n        <!--div class ="l" id="map" style="width:60%;height:560px"></div-->\\r\\n\\r\\n        <div class="foot">\\r\\n            <font color="white" size="4.5">\\r\\n                Copyrights@123\\r\\n            </font>\\r\\n        </div>\\r\\n        <script>\\r\\n            function myMap() {\\r\\n                var mapCanvas = document.getElementById("map");\\r\\n                var myCenter = new google.maps.LatLng(13.55767,80.02949);\\r\\n                var mapOptions = {center: myCenter, zoom: 5};\\r\\n                var map = new google.maps.Map(mapCanvas,mapOptions);\\r\\n                var marker = new google.maps.Marker({position: myCenter,animation: google.maps.Animation.BOUNCE});\\r\\n                marker.setMap(map);\\r\\n//                var mapCanvas = document.getElementById("map");\\r\\n                var myCenter = new google.maps.LatLng(16.506174,80.648015); //vijayawada\\r\\n                var mapOptions = {center: myCenter, zoom: 5};\\r\\n                var map = new google.maps.Map(mapCanvas,mapOptions);\\r\\n                var marker = new google.maps.Marker({position: myCenter});\\r\\n                marker.setMap(map);\\r\\n            }\\r\\n        </script>\\r\\n        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>\\r\\n    </body>\\r\\n</html>\\r\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p23
+sS'__reduce__'
+p24
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p25
+sS'__str__'
+p26
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p27
+sS'__format__'
+p28
+S'<built-in method __format__ of exceptions.NameError object>'
+p29
+sS'__getattribute__'
+p30
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p31
+sS'__class__'
+p32
+S"<type 'exceptions.NameError'>"
+p33
+sS'__unicode__'
+p34
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p35
+sS'__delattr__'
+p36
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p37
+sS'__subclasshook__'
+p38
+S'<built-in method __subclasshook__ of type object>'
+p39
+sS'__repr__'
+p40
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p41
+sS'args'
+p42
+S'("name \'id1\' is not defined",)'
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p47
+sS'__doc__'
+p48
+S"'Name not found globally.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"name 'id1' is not defined"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S'sWo\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>Weatherstation</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_abcd</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-ce5df234-3b21-4b58-b0ca-8f0a3c4b0630<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-e86024a0-b3e1-4925-b8b3-2f1a270ab866<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_pro</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-50082ab5-4a26-4e14-903f-da96b0572143<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_weather</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-83825788-99b4-40f6-9c28-97b9aca372ed<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_weatherstation</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-20cd24c8-2bf8-4db9-bc35-e20726e7c0de<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-2df11d9d-1b4b-4970-8a95-66a28e52bd07<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html, application/xhtml+xml, image/jxr, */*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-IN</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>Keep-Alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-2df11d9d-1b4b-4970-8a95-66a28e52bd07; session_id_admin=127.0.0.1-e86024a0-b3e1-4925-b8b3-2f1a270ab866; session_id_pro=127.0.0.1-50082ab5-4a26-4e14-903f-da96b0572143; session_id_weatherstation=127.0.0.1-20cd24c8-2bf8-4db9-bc35-e20726e7c0de; session_id_weather=127.0.0.1-83825788-99b4-40f6-9c28-97b9aca372ed; session_id_abcd=127.0.0.1-ce5df234-3b21-4b58-b0ca-8f0a3c4b0630</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/Weatherstation/controllers/default.py?id=controllers__default__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/Weatherstation/default/temperature</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>54476</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>LAPTOP-GNQ9QB8U</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\weather\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\Weatherstation\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\abcd\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\Pro\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1c13530: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;fe80::50d1:6179:f3fe:1e93%31&#x27;, &#x27;10.0.5.175&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;LAPTOP-GNQ9QB8U&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html, application/xhtml+xml, image/jxr, */*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-IN</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>Keep-Alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-2df11d9d-1b4b-4970-8a95-66a28e52bd07; session_id_admin=127.0.0.1-e86024a0-b3e1-4925-b8b3-2f1a270ab866; session_id_pro=127.0.0.1-50082ab5-4a26-4e14-903f-da96b0572143; session_id_weatherstation=127.0.0.1-20cd24c8-2bf8-4db9-bc35-e20726e7c0de; session_id_weather=127.0.0.1-83825788-99b4-40f6-9c28-97b9aca372ed; session_id_abcd=127.0.0.1-ce5df234-3b21-4b58-b0ca-8f0a3c4b0630</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/Weatherstation/controllers/default.py?id=controllers__default__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>2001:0:9d38:90d7:2c73:479:f5ff:fa50</div></td></tr><tr><td><div>10.0.5.175</div></td></tr><tr><td><div>LAPTOP-GNQ9QB8U</div></td></tr><tr><td><div>fe80::2c73:479:f5ff:fa50%15</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>fe80::50d1:6179:f3fe:1e93%31</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/Weatherstation/default/temperature</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>54476</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/Weatherstation/default/temperature</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>LAPTOP-GNQ9QB8U</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.12.3-stable+timestamp.2015.08.19.00.18.03</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x00D7D0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x01D8CB20&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x0466C7F0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x00D7D0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x01D8CB20&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x0466C7F0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>temperature</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\weather\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\Weatherstation\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\abcd\\\\&#x27;, &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py\\\\applications\\\\Pro\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x1c13530: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;ips&#x27;: [&#x27;fe80::50d1:6179:f3fe:1e93%31&#x27;, &#x27;10.0.5.175&#x27;], &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;scheduler_groups&#x27;: None, &#x27;port&#x27;: 8000, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;LAPTOP-GNQ9QB8U&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;F:\\\\ITWS III\\\\web2py_win viz\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;&lt;ask&gt;&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>2001:0:9d38:90d7:2c73:479:f5ff:fa50</div></td></tr><tr><td><div>10.0.5.175</div></td></tr><tr><td><div>LAPTOP-GNQ9QB8U</div></td></tr><tr><td><div>fe80::2c73:479:f5ff:fa50%15</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>fe80::50d1:6179:f3fe:1e93%31</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.12.3-stable+timestamp.2015.08.19.00.18.03</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_sheduler</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 9, 24, 1, 10, 52, 568000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/Weatherstation/default/temperature</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 9, 23, 19, 40, 52, 568000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x0909FBF0&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'F:\\ITWS III\\web2py_win viz\\web2py\\gluon\\restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 08D77D10, file "F:\\ITWS...rstation\\views\\default/temperature.html", line 1>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<html>\\\\r\\\\n    <meta name="viewpo...pt>\\\\r\\\\n    </body>\\\\r\\\\n</html>\\\\r\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\views\\default/temperature.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\views\\default\\temperature.html'
+p88
+sg64
+(dp89
+S'content'
+p90
+S'undefined'
+p91
+sS'meta'
+p92
+g91
+sS'name'
+p93
+g91
+ssg70
+I2
+sg71
+(dp94
+I1
+S'response.write(\'<html>\\r\\n    <meta name="viewport" content="width=device-width, initial-scale=1">\\r\\n    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">\\r\\n    <style>\\r\\n        .w3-theme{\\r\\n            background-color:orange;\\r\\n        }\\r\\n        div.roll{\\r\\n            background-color: yellow;\\r\\n            font-size:15px;\\r\\n            color:red;\\r\\n        }\\r\\n        div.assg {\\r\\n            background-color: black;\\r\\n            color: white;\\r\\n            margin: 0px 0 0 0;\\r\\n            padding: 0px;\\r\\n        }\\r\\n        div.assd {\\r\\n            background-color: black;\\r\\n            float : left;\\r\\n            color: white;\\r\\n            margin: 0px 0 10px 0;\\r\\n            padding: 0px;\\r\\n            width: 140px;\\r\\n            height: 360px;\\r\\n        }\\r\\n        div.news {\\r\\n            margin: 20px 0 20px 0;\\r\\n            float : right;\\r\\n            text-align:center;\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 40px;\\r\\n            width: 270px;\\r\\n            height: 690px;\\r\\n        }\\r\\n        div.foot{\\r\\n            background-color:black;\\r\\n            text-align:center;\\r\\n            margin: 570px 0 0 0;\\r\\n        }\\r\\n        div.l{\\r\\n            float:right;\\r\\n        }\\r\\n        #head{\\r\\n            position: relative;\\r\\n            background-color:#73e600;\\r\\n            color:#800000;\\r\\n            margin: 0 0 0 0;\\r\\n            padding: 18px;\\r\\n            text-align:center;\\r\\n            font-size:25px;\\r\\n            font-style:italic;\\r\\n            text-shadow:1px 1px 4px black;\\r\\n        }\\r\\n        #head img\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n            left: 5px;\\r\\n        }\\r\\n        #table {\\r\\n            border-collapse: collapse;\\r\\n            width: 50%;\\r\\n        }\\r\\n        #td {\\r\\n            text-align: left;\\r\\n            padding: 2px;\\r\\n        }\\r\\n        #tr:nth-child(even){background-color: #f2f2f2}\\r\\n        #th {\\r\\n            text-align: left;\\r\\n            padding: 2px;\\r\\n            background-color: #4CAF50;\\r\\n            color: white;\\r\\n        }\\r\\n    </style>\\r\\n    <body class="w3-theme">\\r\\n        <div class="assg">\\r\\n            <div id="head">\\r\\n                <img src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" align="top-left" width="75" height="60">\\r\\n                Weather Station\\r\\n            </div>\\r\\n            <table>\\r\\n                <tr>\\r\\n                    <td>&nbsp</td>\\r\\n                </tr>\\r\\n                <tr>\\r\\n                    <td width="1300">\\r\\n                        <div class="w3-dropdown-hover">\\r\\n                            <form action="index">\\r\\n                                <button class="w3-btn w3-black">Home</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="s" >\\r\\n                                <button class="w3-btn w3-black">SignUp</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td>\\r\\n                        <a href="http://www.facebook.com" target="_blank">\\r\\n                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30">\\r\\n                        </a>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td>\\r\\n                        <a href="http://www.twitter.com" target="_blank">\\r\\n                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">\\r\\n                        </a>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td>\\r\\n                        <a href="http://www.gmail.com" target="_blank">\\r\\n                            <img src="http://files.technobezz.com/files/uploads/2016/03/original.jpg" alt="gmail" width="30" height="30">\\r\\n                        </a>\\r\\n                    </td>\\r\\n                </tr>\\r\\n            </table>\\r\\n        </div>\\r\\n        <div class="roll">\\r\\n            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">\\r\\n                Welcome to Weather Station!!</font>\\r\\n            </marquee>\\r\\n        </div>\\r\\n        <div class="assd">\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Temprature</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Pressure</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Humidity</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Rainfall</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Others</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Contact Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">About Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n        </div>\\r\\n        <div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-xxx inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        \\r\\n        </div>\\r\\n    \\r\\n        <!--div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        </div-->\\r\\n        <center>\\r\\n            <br>\\r\\n            <br>\\r\\n            <br>\\r\\n            <br><br>\\r\\n        <table id="table">\\r\\n        <tr id="tr">\\r\\n            <th id="th">Place</th>\\r\\n            <th id="th">Low Temparature</th>\\r\\n            <th id="th">High Temparature</th>\\r\\n        </tr>\\r\\n        \', escape=False)'
+p95
+sI2
+S'for i in id1:'
+p96
+sI3
+S'    response.write(\'\\r\\n        <tr id="tr">\\r\\n            <td id="td">\', escape=False)'
+p97
+sI4
+S'    response.write(i.place)'
+p98
+sI5
+S'    response.write(\'</td>\\r\\n            <td id="td">\', escape=False)'
+p99
+sI6
+S'    response.write(i.low_temparature)'
+p100
+sI7
+S'    response.write(\'C</td>\\r\\n            <td id="td">\', escape=False)'
+p101
+sI8
+S'    response.write(i.high_temparature)'
+p102
+sI9
+S"    response.write('C</td>\\r\\n        </tr>\\r\\n        ', escape=False)"
+p103
+sI10
+S'    pass'
+p104
+sI11
+S'response.write(\'\\r\\n        </table>\\r\\n        </center>\\r\\n        <!--div class ="l" id="map" style="width:60%;height:560px"></div-->\\r\\n\\r\\n        <div class="foot">\\r\\n            <font color="white" size="4.5">\\r\\n                Copyrights@123\\r\\n            </font>\\r\\n        </div>\\r\\n        <script>\\r\\n            function myMap() {\\r\\n                var mapCanvas = document.getElementById("map");\\r\\n                var myCenter = new google.maps.LatLng(13.55767,80.02949);\\r\\n                var mapOptions = {center: myCenter, zoom: 5};\\r\\n                var map = new google.maps.Map(mapCanvas,mapOptions);\\r\\n                var marker = new google.maps.Marker({position: myCenter,animation: google.maps.Animation.BOUNCE});\\r\\n                marker.setMap(map);\\r\\n//                var mapCanvas = document.getElementById("map");\\r\\n                var myCenter = new google.maps.LatLng(16.506174,80.648015); //vijayawada\\r\\n                var mapOptions = {center: myCenter, zoom: 5};\\r\\n                var map = new google.maps.Map(mapCanvas,mapOptions);\\r\\n                var marker = new google.maps.Marker({position: myCenter});\\r\\n                marker.setMap(map);\\r\\n            }\\r\\n        </script>\\r\\n        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>\\r\\n    </body>\\r\\n</html>\\r\\n\', escape=False)'
+p105
+ssg83
+S'()'
+p106
+sg85
+S'<module>'
+p107
+sasS'pyver'
+p108
+S'Python 2.7.9: F:\\ITWS III\\web2py_win viz\\web2py\\web2py.exe (prefix: )'
+p109
+sS'session'
+p110
+g57
+(S's\x1a\x00\x00\x00<div><table></table></div>'
+tRp111
+sS'etype'
+p112
+S"<type 'exceptions.NameError'>"
+p113
+sS'date'
+p114
+S'Sat Sep 24 01:10:52 2016'
+p115
+sS'response'
+p116
+g57
+(S's\xe5>\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x091EEE60&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_weatherstation</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d43b846c-6174-414a-a7be-738f0e802189<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="navbar-brand" href="http://www.web2py.com/" id="web2py-logo"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Weatherstation/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/Weatherstation</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Controller</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>View</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/views/default/temperature.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>DB Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Menu Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Layout</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Stylesheet</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Weatherstation/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Weatherstation/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errors</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/Weatherstation</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>About</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/Weatherstation</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Download</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Support</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Quick Examples</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>FAQ</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Videos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Free Applications</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Preface</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introduction</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Overview</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Core</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Views</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Forms and Validators</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Email and SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Access Control</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Services</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ajax Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Components and Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Deployment Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Other Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Buy web2py\'s book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Groups</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Live Chat</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/temperature/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_key</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_weatherstation</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\sessions\\127.0.0.1-d43b846c-6174-414a-a7be-738f0e802189</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>c0762cbf4baf7f9af97c051e7fcb8083</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d43b846c-6174-414a-a7be-738f0e802189</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_weatherstation</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>Weatherstation</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Weatherstation</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/temperature.html</div></td></tr></table></div>'
+tRp117
+sS'locals'
+p118
+(dp119
+S'Service'
+p120
+S"<class 'gluon.tools.Service'>"
+p121
+sS'OBJECT'
+p122
+S"<class 'gluon.html.OBJECT'>"
+p123
+sS'SQLDB'
+p124
+S"<class 'pydal.base.DAL'>"
+p125
+sg110
+S'<Storage {}>'
+p126
+sS'LINK'
+p127
+S"<class 'gluon.html.LINK'>"
+p128
+sS'BR'
+p129
+S"<class 'gluon.html.BR'>"
+p130
+sS'local_import'
+p131
+S'<function <lambda>>'
+p132
+sS'OPTGROUP'
+p133
+S"<class 'gluon.html.OPTGROUP'>"
+p134
+sS'__package__'
+p135
+S'None'
+p136
+sS'PRE'
+p137
+S"<class 'gluon.html.PRE'>"
+p138
+sS'IS_INT_IN_RANGE'
+p139
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p140
+sS'IS_LOWER'
+p141
+S"<class 'gluon.validators.IS_LOWER'>"
+p142
+sS'IS_STRONG'
+p143
+S"<class 'gluon.validators.IS_STRONG'>"
+p144
+sS'cache'
+p145
+S'<gluon.cache.Cache object>'
+p146
+sS'IS_IN_DB'
+p147
+S"<class 'gluon.validators.IS_IN_DB'>"
+p148
+sS'TAG'
+p149
+S'<gluon.html.__TAG__ object>'
+p150
+sS'SQLField'
+p151
+S"<class 'pydal.objects.Field'>"
+p152
+sS'mail'
+p153
+S'<gluon.tools.Mail object>'
+p154
+sS'BODY'
+p155
+S"<class 'gluon.html.BODY'>"
+p156
+sS'IS_DATE_IN_RANGE'
+p157
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p158
+sS'IFRAME'
+p159
+S"<class 'gluon.html.IFRAME'>"
+p160
+sS'URL'
+p161
+S'<function URL>'
+p162
+sS'__file__'
+p163
+S"r'F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\views\\default/temperature.html'"
+p164
+sS'db'
+p165
+S'<DAL uri="sqlite://storage.sqlite">'
+p166
+sS'auth'
+p167
+S'<gluon.tools.Auth object>'
+p168
+sS'P'
+S"<class 'gluon.html.P'>"
+p169
+sS'TFOOT'
+p170
+S"<class 'gluon.html.TFOOT'>"
+p171
+sS'XHTML'
+p172
+S"<class 'gluon.html.XHTML'>"
+p173
+sS'ON'
+p174
+S'True'
+p175
+sS'OL'
+p176
+S"<class 'gluon.html.OL'>"
+p177
+sS'TEXTAREA'
+p178
+S"<class 'gluon.html.TEXTAREA'>"
+p179
+sS'MENU'
+p180
+S"<class 'gluon.html.MENU'>"
+p181
+sS'IS_IMAGE'
+p182
+S"<class 'gluon.validators.IS_IMAGE'>"
+p183
+sS'EM'
+p184
+S"<class 'gluon.html.EM'>"
+p185
+sS'CODE'
+p186
+S"<class 'gluon.html.CODE'>"
+p187
+sS'HTTP'
+p188
+S"<class 'gluon.http.HTTP'>"
+p189
+sS'HR'
+p190
+S"<class 'gluon.html.HR'>"
+p191
+sS'IS_DATETIME'
+p192
+S"<class 'gluon.validators.IS_DATETIME'>"
+p193
+sS'STYLE'
+p194
+S"<class 'gluon.html.STYLE'>"
+p195
+sS'LABEL'
+p196
+S"<class 'gluon.html.LABEL'>"
+p197
+sS'CLEANUP'
+p198
+S"<class 'gluon.validators.CLEANUP'>"
+p199
+sS'plugins'
+p200
+S'<gluon.tools.PluginManager object>'
+p201
+sS'SELECT'
+p202
+S"<class 'gluon.html.SELECT'>"
+p203
+sS'CENTER'
+p204
+S"<class 'gluon.html.CENTER'>"
+p205
+sS'Auth'
+p206
+S"<class 'gluon.tools.Auth'>"
+p207
+sS'DEVELOPMENT_MENU'
+p208
+g175
+sS'__builtins__'
+p209
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p210
+sS'HTML'
+p211
+S"<class 'gluon.html.HTML'>"
+p212
+sS'SQLFORM'
+p213
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p214
+sS'reading'
+p215
+S'<Rows (0)>'
+p216
+sS'LOAD'
+p217
+S'<function LOAD>'
+p218
+sS'redirect'
+p219
+S'<function redirect>'
+p220
+sS'FIELDSET'
+p221
+S"<class 'gluon.html.FIELDSET'>"
+p222
+sS'IS_EQUAL_TO'
+p223
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p224
+sS'embed64'
+p225
+S'<function embed64>'
+p226
+sS'IS_LIST_OF'
+p227
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p228
+sS'INPUT'
+p229
+S"<class 'gluon.html.INPUT'>"
+p230
+sS'EMBED'
+p231
+S"<class 'gluon.html.EMBED'>"
+p232
+sS'_'
+S'<function _>'
+p233
+sS'myconf'
+p234
+S"{'forms': {'formstyle': 'bootstrap3_inline', 'se...'you@gmail.com', 'server': 'smtp.gmail.com:587'}}"
+p235
+sS'H2'
+p236
+S"<class 'gluon.html.H2'>"
+p237
+sS'H3'
+p238
+S"<class 'gluon.html.H3'>"
+p239
+sS'AppConfig'
+p240
+S'<function AppConfig>'
+p241
+sS'H1'
+p242
+S"<class 'gluon.html.H1'>"
+p243
+sS'H6'
+p244
+S"<class 'gluon.html.H6'>"
+p245
+sS'H4'
+p246
+S"<class 'gluon.html.H4'>"
+p247
+sS'H5'
+p248
+S"<class 'gluon.html.H5'>"
+p249
+sS'UL'
+p250
+S"<class 'gluon.html.UL'>"
+p251
+sS'IS_UPPER'
+p252
+S"<class 'gluon.validators.IS_UPPER'>"
+p253
+sS'xmlescape'
+p254
+S'<function xmlescape>'
+p255
+sS'IS_TIME'
+p256
+S"<class 'gluon.validators.IS_TIME'>"
+p257
+sS'OPTION'
+p258
+S"<class 'gluon.html.OPTION'>"
+p259
+sS'TITLE'
+p260
+S"<class 'gluon.html.TITLE'>"
+p261
+sS'CRYPT'
+p262
+S"<class 'gluon.validators.CRYPT'>"
+p263
+sS'IS_EMPTY_OR'
+p264
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p265
+sS'MARKMIN'
+p266
+S"<class 'gluon.html.MARKMIN'>"
+p267
+sS'__name__'
+p268
+S"'__restricted__'"
+p269
+sS'STRONG'
+p270
+S"<class 'gluon.html.STRONG'>"
+p271
+sS'COL'
+p272
+S"<class 'gluon.html.COL'>"
+p273
+sS'service'
+p274
+S'<gluon.tools.Service object>'
+p275
+sS'SCRIPT'
+p276
+S"<class 'gluon.html.SCRIPT'>"
+p277
+sS'TABLE'
+p278
+S"<class 'gluon.html.TABLE'>"
+p279
+sS'IS_IPV4'
+p280
+S"<class 'gluon.validators.IS_IPV4'>"
+p281
+sS'IS_LENGTH'
+p282
+S"<class 'gluon.validators.IS_LENGTH'>"
+p283
+sS'IS_IPV6'
+p284
+S"<class 'gluon.validators.IS_IPV6'>"
+p285
+sS'XML'
+p286
+S"<class 'gluon.html.XML'>"
+p287
+sS'B'
+S"<class 'gluon.html.B'>"
+p288
+sS'IMG'
+p289
+S"<class 'gluon.html.IMG'>"
+p290
+sS'SQLTABLE'
+p291
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p292
+sS'IS_MATCH'
+p293
+S"<class 'gluon.validators.IS_MATCH'>"
+p294
+sS'IS_ALPHANUMERIC'
+p295
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p296
+sS'SPAN'
+p297
+S"<class 'gluon.html.SPAN'>"
+p298
+sS'IS_JSON'
+p299
+S"<class 'gluon.validators.IS_JSON'>"
+p300
+sS'IS_IPADDRESS'
+p301
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p302
+sS'IS_SLUG'
+p303
+S"<class 'gluon.validators.IS_SLUG'>"
+p304
+sS'BEAUTIFY'
+p305
+S"<class 'gluon.html.BEAUTIFY'>"
+p306
+sS'META'
+p307
+S"<class 'gluon.html.META'>"
+p308
+sS'BUTTON'
+p309
+S"<class 'gluon.html.BUTTON'>"
+p310
+sS'IS_DATE'
+p311
+S"<class 'gluon.validators.IS_DATE'>"
+p312
+sS'IS_EMAIL'
+p313
+S"<class 'gluon.validators.IS_EMAIL'>"
+p314
+sS'IS_NOT_EMPTY'
+p315
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p316
+sS'IS_FLOAT_IN_RANGE'
+p317
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p318
+sS'TBODY'
+p319
+S"<class 'gluon.html.TBODY'>"
+p320
+sS'CAT'
+p321
+S"<class 'gluon.html.CAT'>"
+p322
+sS'Field'
+p323
+S"<class 'pydal.objects.Field'>"
+p324
+sS'IS_LIST_OF_EMAILS'
+p325
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p326
+sS'DIV'
+p327
+S"<class 'gluon.html.DIV'>"
+p328
+sS'LEGEND'
+p329
+S"<class 'gluon.html.LEGEND'>"
+p330
+sS'COLGROUP'
+p331
+S"<class 'gluon.html.COLGROUP'>"
+p332
+sS'DAL'
+p333
+S"<class 'pydal.base.DAL'>"
+p334
+sS'ASSIGNJS'
+p335
+S'<function ASSIGNJS>'
+p336
+sS'TR'
+p337
+S"<class 'gluon.html.TR'>"
+p338
+sS'LI'
+p339
+S"<class 'gluon.html.LI'>"
+p340
+sS'TH'
+p341
+S"<class 'gluon.html.TH'>"
+p342
+sS'TD'
+p343
+S"<class 'gluon.html.TD'>"
+p344
+sS'PluginManager'
+p345
+S"<class 'gluon.tools.PluginManager'>"
+p346
+sS'IS_URL'
+p347
+S"<class 'gluon.validators.IS_URL'>"
+p348
+sS'A'
+S"<class 'gluon.html.A'>"
+p349
+sS'HEAD'
+p350
+S"<class 'gluon.html.HEAD'>"
+p351
+sS'IS_DATETIME_IN_RANGE'
+p352
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p353
+sS'FORM'
+p354
+S"<class 'gluon.html.FORM'>"
+p355
+sS'I'
+S"<class 'gluon.html.I'>"
+p356
+sS'IS_NOT_IN_DB'
+p357
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p358
+sg116
+S"<Storage {'body': <cStringIO.StringO object at 0...0x0911DCB0>, 'view': 'default/temperature.html'}>"
+p359
+sS'THEAD'
+p360
+S"<class 'gluon.html.THEAD'>"
+p361
+sS'ANY_OF'
+p362
+S"<class 'gluon.validators.ANY_OF'>"
+p363
+sS'IS_NULL_OR'
+p364
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p365
+sg56
+S"<Storage {'_vars': None, 'function': 'temperatur...in viz\\\\web2py\\\\applications\\\\Weatherstation\\\\'}>"
+p366
+sS'IS_EXPR'
+p367
+S"<class 'gluon.validators.IS_EXPR'>"
+p368
+sS'T'
+S'<gluon.languages.translator object>'
+p369
+sS'IS_IN_SET'
+p370
+S"<class 'gluon.validators.IS_IN_SET'>"
+p371
+sS'IS_UPLOAD_FILENAME'
+p372
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p373
+sS'TT'
+p374
+S"<class 'gluon.html.TT'>"
+p375
+sS'IS_DECIMAL_IN_RANGE'
+p376
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p377
+sssS'traceback'
+p378
+S'Traceback (most recent call last):\n  File "F:\\ITWS III\\web2py_win viz\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "F:\\ITWS III\\web2py_win viz\\web2py\\applications\\Weatherstation\\views\\default/temperature.html", line 2, in <module>\n    <meta name="viewport" content="width=device-width, initial-scale=1">\nNameError: name \'id1\' is not defined\n'
+p379
+s.

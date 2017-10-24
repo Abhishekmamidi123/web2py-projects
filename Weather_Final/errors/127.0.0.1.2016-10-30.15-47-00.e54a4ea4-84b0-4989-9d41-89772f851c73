@@ -1,0 +1,788 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.NameError'> name 'read' is not defined"
+p3
+sS'layer'
+p4
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\views\\default/aboutus.html'
+p5
+sS'code'
+p6
+S'response.write(\'<html>\\r\\n    <meta name="viewport" content="width=device-width, initial-scale=1">\\r\\n    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">\\r\\n    <style>\\r\\n        div.about{\\r\\n             font-family:"Comic Sans MS", cursive, sans-serif;\\r\\n            font-size:22px;\\r\\n            \\r\\n        }\\r\\n        div.find{\\r\\n            height:160px;\\r\\n            width:240px;\\r\\n            background:#ff5050;\\r\\n           \\r\\n        }\\r\\n        .imgWrap {\\r\\n  position: relative;\\r\\n\\r\\n}\\r\\n        #demo\\r\\n        {\\r\\n            color:white;\\r\\n        }\\r\\n\\r\\n.imgDescription {\\r\\n  position: absolute;\\r\\n  top: 0;\\r\\n  bottom: 0;\\r\\n  left: 0;\\r\\n  right: 0;\\r\\n  <!--background: rgba(29, 106, 154, 0.72);-->\\r\\n    background:#0033cc;\\r\\n color: white;\\r\\n\\r\\n\\r\\n  visibility: hidden;\\r\\n  opacity: 0;\\r\\n\\r\\n  /*remove comment if you want a gradual transition between states\\r\\n  -webkit-transition: visibility opacity 0.2s;\\r\\n  */\\r\\n}\\r\\n\\r\\n\\r\\n.imgWrap:hover .imgDescription {\\r\\n  visibility: visible;\\r\\n  opacity: 1;\\r\\n}\\r\\n        .w3-theme{\\r\\n            background-color:orange;\\r\\n        }\\r\\n        div.roll{\\r\\n            background-color: yellow;\\r\\n            font-size:15px;\\r\\n            color:red;\\r\\n        }\\r\\n        div.assg {\\r\\n            background-color: black;\\r\\n            color: white;\\r\\n            margin: 0px 0 0 0;\\r\\n            padding: 0px;\\r\\n        }\\r\\n        div.assd {\\r\\n            background-color: black;\\r\\n            float : left;\\r\\n            color: white;\\r\\n            margin: 0px 0 10px 0;\\r\\n            padding: 0px;\\r\\n            width: 140px;\\r\\n            height: 360px;\\r\\n        }\\r\\n        div.new {\\r\\n            margin: 0px 0 0px 0;\\r\\n            float : left;\\r\\n            <!--text-align:center;-->\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 0px;\\r\\n            width: 270px;\\r\\n            height: 650px;\\r\\n            background-color:"#9999ff"\\r\\n        }\\r\\n        div.su{\\r\\n         height:80px;   \\r\\n        }\\r\\n        div.news {\\r\\n            margin: 0px 0 0px 0;\\r\\n            float : right;\\r\\n            text-align:center;\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 10px;\\r\\n            width: 270px;\\r\\n            height: 670px;\\r\\n        }\\r\\n        div.foot{\\r\\n            background-color:black;\\r\\n            text-align:center;\\r\\n            margin: 650px 0 0 0;\\r\\n        }\\r\\n        div.l{\\r\\n            float:right;\\r\\n        }\\r\\n        #head{\\r\\n            position: relative;\\r\\n            background-color:#73e600;\\r\\n            color:#800000;\\r\\n            margin: 0 0 0 0;\\r\\n            padding: 18px;\\r\\n          text-align:center;\\r\\n            font-size:30px;\\r\\n            font-style:italic;\\r\\n            text-shadow:1px 1px 4px black;\\r\\n        }\\r\\n        #head img\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n          left: 15px;\\r\\n        }\\r\\n         #head img2\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n          right: 15px;\\r\\n        }\\r\\n        \\r\\n        div.img1{\\r\\n             top: 5px;\\r\\n          left: 5px;\\r\\n            padding-left: 2cm;\\r\\n        }\\r\\n        div.img2{\\r\\n             top: 20px;\\r\\n          right:5px;\\r\\n            padding-left: 75%;\\r\\n        }\\r\\n        a:link {\\r\\n            color: green;\\r\\n            background-color: transparent;\\r\\n            text-decoration: none;\\r\\n        }\\r\\n        a:hover {\\r\\n            color: red;\\r\\n            background-color: transparent;\\r\\n            text-decoration: none;\\r\\n        }\\r\\n.dropbtn {\\r\\n    background-color: black;\\r\\n    color: white;\\r\\n    padding: 6px;\\r\\n    font-size: 14px;\\r\\n    border: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.dropdown {\\r\\n    position: relative;\\r\\n    display: inline-block;\\r\\n}\\r\\n\\r\\n.dropdown-content {\\r\\n    display: none;\\r\\n    position: absolute;\\r\\n    background-color: #f9f9f9;\\r\\n    min-width: 85px;\\r\\n     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);\\r\\n}\\r\\n\\r\\n.dropdown-content a {\\r\\n    color: black;\\r\\n    padding: 6px 8px;\\r\\n    text-decoration: none;\\r\\n    display: block;\\r\\n}\\r\\n\\r\\n.dropdown-content a:hover {background-color: pink;}\\r\\n\\r\\n.dropdown:hover .dropdown-content {\\r\\n    display: block;\\r\\n}\\r\\n\\r\\n.dropdown:hover .dropbtn {\\r\\n    background-color: grey;\\r\\n}\\r\\n         .sidenav {\\r\\n    height: 100%;\\r\\n    width: 0;\\r\\n    position: fixed;\\r\\n    z-index: 1;\\r\\n    top: 0;\\r\\n    left: 0;\\r\\n    background-color: black;\\r\\n    overflow-x: hidden;\\r\\n    transition: 0.5s;\\r\\n    padding-top: 60px;\\r\\n    <!--text-align:center;-->\\r\\n}\\r\\n\\r\\n.sidenav a {\\r\\n    padding: 8px 8px 8px 32px;\\r\\n    text-decoration: none;\\r\\n    font-size: 25px;\\r\\n    color: red;\\r\\n    display: block;\\r\\n    transition: 0.3s\\r\\n\\r\\n}\\r\\n\\r\\n.sidenav a:hover{\\r\\n    color:red;\\r\\n}\\r\\n\\r\\n.sidenav .closebtn {\\r\\n    position: absolute;\\r\\n    top: 0;\\r\\n    right: 25px;\\r\\n    font-size: 36px;\\r\\n    margin-left: 50px;\\r\\n}\\r\\n\\r\\n#main {\\r\\n    transition: margin-left .5s;\\r\\n    padding: 16px;\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n@media screen and (max-height: 450px) {\\r\\n  .sidenav {padding-top: 15px;}\\r\\n  .sidenav a {font-size: 18px;}\\r\\n}\\r\\n\\r\\n        .modal {\\r\\n    display: none; /* Hidden by default */\\r\\n    position: fixed; /* Stay in place */\\r\\n    z-index: 1; /* Sit on top */\\r\\n    padding-top: 100px; /* Location of the box */\\r\\n    left: 0;\\r\\n    top: 0;\\r\\n    width: 100%; /* Full width */\\r\\n    height: 100%; /* Full height */\\r\\n    overflow: auto; /* Enable scroll if needed */\\r\\n    background-color: rgb(0,0,0); /* Fallback color */\\r\\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\\r\\n}\\r\\n\\r\\n/* Modal Content */\\r\\n.modal-content {\\r\\n    position: relative;\\r\\n    background-color: pink;\\r\\n    margin: auto;\\r\\n    padding: 0;\\r\\n    border: 1px solid #888;\\r\\n    width: 80%;\\r\\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\\r\\n    -webkit-animation-name: animatetop;\\r\\n    -webkit-animation-duration: 0.4s;\\r\\n    animation-name: animatetop;\\r\\n    animation-duration: 0.4s\\r\\n}\\r\\n\\r\\n/* Add Animation */\\r\\n@-webkit-keyframes animatetop {\\r\\n    from {top:-300px; opacity:0}\\r\\n    to {top:0; opacity:1}\\r\\n}\\r\\n\\r\\n@keyframes animatetop {\\r\\n    from {top:-300px; opacity:0}\\r\\n    to {top:0; opacity:1}\\r\\n}\\r\\n\\r\\n/* The Close Button */\\r\\n.close {\\r\\n    color: white;\\r\\n    float: right;\\r\\n    font-size: 28px;\\r\\n    font-weight: bold;\\r\\n}\\r\\n\\r\\n.close:hover,\\r\\n.close:focus {\\r\\n    color: #000;\\r\\n    text-decoration: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.modal-header {\\r\\n    padding: 2px 16px;\\r\\n    background-color: #9933ff;\\r\\n    color: white;\\r\\n}\\r\\n\\r\\n.modal-body {\\r\\n    padding: 2px 16px;\\r\\n    background-color:#ffcc99;\\r\\n    color:black;\\r\\n}\\r\\n\\r\\n.modal-footer {\\r\\n    padding: 2px 16px;\\r\\n    background-color: #5cb85c;\\r\\n    color: white;\\r\\n}\\r\\n\\r\\n.mybtn{\\r\\n    background-color:black;\\r\\n    color:pink;\\r\\n}\\r\\n\\r\\n        /////////////\\r\\n\\r\\n    </style>\\r\\n    <body class="w3-theme">\\r\\n        <div class="assg">\\r\\n            <div id="head">\\r\\n                \\r\\n                   \\r\\n               <a href="http://127.0.0.1:8000/Aditya/default/index?">\\r\\n                <img  src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" width="75" height="60"></a>\\r\\n                       \\r\\n\\r\\n               Weather Station\\r\\n                                  <!--img class="img2" src="http://www.clipartpal.com/_thumbs/pd/weather/weather_vane.png" alt="Adi"  width="75" height="60"-->\\r\\n\\r\\n            </div>\\r\\n            <table>\\r\\n                <tr>\\r\\n                    <td>&nbsp</td>\\r\\n                </tr>\\r\\n                <tr>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover">\\r\\n                            <form action="index">\\r\\n                                <button class="w3-btn w3-black">Home &nbsp&nbsp<img src="http://findicons.com/files/icons/1261/sticker_system/128/home.png" height="30" width="30"></button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="temperature" >\\r\\n                                <button class="w3-btn w3-black">Temperature</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="pressure" >\\r\\n                                <button class="w3-btn w3-black">Pressure</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td width="450">\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="humidity" >\\r\\n                                <button class="w3-btn w3-black">Humidity</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td width="550">\\r\\n                         <button class="w3-btn w3-black">\\r\\n                        <script type="text/javascript">\\r\\ntday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");\\r\\ntmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");\\r\\n\\r\\nfunction GetClock(){\\r\\nvar d=new Date();\\r\\nvar nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();\\r\\nif(nyear<1000) nyear+=1900;\\r\\nvar nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;\\r\\n\\r\\nif(nhour==0){ap=" AM";nhour=12;}\\r\\nelse if(nhour<12){ap=" AM";}\\r\\nelse if(nhour==12){ap=" PM";}\\r\\nelse if(nhour>12){ap=" PM";nhour-=12;}\\r\\n\\r\\nif(nmin<=9) nmin="0"+nmin;\\r\\nif(nsec<=9) nsec="0"+nsec;\\r\\n\\r\\ndocument.getElementById(\\\'clockbox\\\').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";\\r\\n}\\r\\n\\r\\nwindow.onload=function(){\\r\\nGetClock();\\r\\nsetInterval(GetClock,1000);\\r\\n}\\r\\n</script>\\r\\n<div id="clockbox"></div>\\r\\n</button>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                         <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="contactus" >\\r\\n                                <button class="w3-btn w3-black">Contact&nbsp Us</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="signup args=" "" >\\r\\n                                <button class="w3-btn w3-black">SignUp</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    \\r\\n                    <td width="5%">\\r\\n                        <div class="imgWrap">\\r\\n  <!--a href="http://www.facebook.com" target="_blank"-->\\r\\n                              <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="http://www.facebook.com" >\\r\\n                                <button class="w3-btn w3-black">\\r\\n                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30"></button>\\r\\n                                </form>\\r\\n                        </div>\\r\\n                        </a>\\r\\n  <p class="imgDescription">Join us on Facebook</p>\\r\\n</div>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td width="5%">\\r\\n                         <div class="imgWrap">\\r\\n  <!--a href="http://www.twitter.com" target="_blank"-->\\r\\n                              <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="http://www.twitter.com" >\\r\\n                                <button class="w3-btn w3-black">\\r\\n                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">\\r\\n                            </button>\\r\\n                                </form>\\r\\n                        </div>\\r\\n\\r\\n                        </a>\\r\\n                             <p class="imgDescription">Follow us on Twitter</p>\\r\\n</div>\\r\\n                        \\r\\n                    </td>\\r\\n                    \\r\\n                </tr>\\r\\n            </table>\\r\\n        </div>\\r\\n        <div class="roll">\\r\\n            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">\\r\\n                <i>Place &nbsp : &nbsp Max &nbsp/ &nbsp Min Temp&nbsp,&nbsp&nbsp</i></font>\\r\\n                \', escape=False)\nfor i in read:\n    response.write(\'\\r\\n                <font color="blue">\', escape=False)\n    response.write(i.place)\n    response.write(\'</font>&nbsp :\\r\\n                <font color="green">\', escape=False)\n    response.write(i.high_temparature)\n    response.write(\'&nbsp / </font>\\r\\n                <font color="black">\', escape=False)\n    response.write(i.low_temparature)\n    response.write(\'&nbsp,&nbsp</font>\\r\\n                 \', escape=False)\n    pass\nresponse.write(\'\\r\\n                \\r\\n            </marquee>\\r\\n        </div>\\r\\n        <!--div class="assd">\\r\\n            <tr>\\r\\n                <form action="temperature">\\r\\n                    <button class="w3-btn w3-black">Temprature</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="pressure">\\r\\n                    <button class="w3-btn w3-black">Pressure</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Humidity</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Rainfall</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Others</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Contact Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">About Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n        </div-->\\r\\n        <div class="new">\\r\\n<tr>\\r\\n<div id="mySidenav" class="sidenav">\\r\\n\\r\\n  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\\r\\n  <center>\\r\\n  <button id="myBtn" class="mybtn">Chennai</button><br><br><br><br>\\r\\n  <button id="myBtn_1" class="mybtn">Vijayawada</button><br><br><br><br>\\r\\n  <button id="myBtn_2" class="mybtn">Amalapuram</button><br><br><br><br>\\r\\n  <button id="myBtn_3" class="mybtn">Guntur</button><br><br><br><br>\\r\\n  <button id="myBtn_4" class="mybtn">Vishakhaptnam</button>\\r\\n  </center>\\r\\n</div>\\r\\n\\r\\n\\r\\n<!--span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Places</span-->\\r\\n\\r\\n\\r\\n<div id="main">\\r\\n  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#x2630; Places</span>\\r\\n</div>\\r\\n\\r\\n\\r\\n<script>\\r\\nfunction openNav() {\\r\\n    document.getElementById("mySidenav").style.width = "285px";\\r\\n   // document.getElementById("main").style.marginLeft = "150px";\\r\\n}\\r\\n\\r\\nfunction closeNav() {\\r\\n    document.getElementById("mySidenav").style.width = "0";\\r\\n    //document.getElementById("main").style.marginLeft= "0";\\r\\n}\\r\\n</script>\\r\\n\\r\\n\\r\\n<div id="myModal" class="modal">\\r\\n\\r\\n  <!-- Modal content -->\\r\\n  <div class="modal-content">\\r\\n    <div class="modal-header">\\r\\n      <span class="close">\\xc3\\x97</span>\\r\\n      <h2>Weather Report</h2>\\r\\n    </div>\\r\\n    <div class="modal-body" >\\r\\n      <p>Temperature: 29.6\\xc2\\xb0C</p>\\r\\n      <p>Pressure: 1219 hPa</p>\\r\\n         <p>Humidity: 40%</p>\\r\\n    </div>\\r\\n  </div>\\r\\n    \\r\\n    \\r\\n    \\r\\n    \\r\\n    \\r\\n\\r\\n</div>\\r\\n<script>\\r\\n// Get the modal\\r\\nvar modal = document.getElementById(\\\'myModal\\\');\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_1");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_2");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_3");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_4");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n</script>\\r\\n            </tr>\\r\\n            \\r\\n            \\r\\n            <font color="black" >\\r\\n                \\r\\n                <a href="imd_sensors" >  &nbsp&nbsp&nbsp&#9776;IMD SENSORS</a><br><br>\\r\\n                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>\\r\\n                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>\\r\\n                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp&#9776; IIIT CHITTOR</a><br>\\r\\n                </br></font>\\r\\n            \\r\\n            \\r\\n            \\r\\n            <br><br><br><br>\\r\\n            <div class="find"><center><br>\\r\\n            <form action="find">\\r\\n                Enter the city:<input type="text" name="name"></input>\\r\\n                <br><br>\\r\\n<button type="submit">\\r\\n    Submit\\r\\n</button>\\r\\n                </form></center></div>\\r\\n            \\r\\n        </div>\\r\\n        \\r\\n        \\r\\n        \\r\\n        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->\\r\\n       \\r\\n        <div class="news" >\\r\\n             <div class="su">\\r\\n                 <br>\\r\\n                 <img src="http://www.metalvideos.net/Updates.gif" alt="Suma" height="50" width="170">\\r\\n</div>\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai.<br><br>-The Weather Station plans to celebrate Environmental Day in association with UNESCO.<br><br>-Heavy rains at Tirupati.<br> <br>-Ms.Jayalalitha inaugurates a sub-station of the IMD at the Nilgiri hills.\\r\\n                \\r\\n               <br> <br>- Setting\\xc2\\xa0in\\xc2\\xa0of\\xc2\\xa0northeasterly\\xc2\\xa0winds\\xc2\\xa0along\\xc2\\xa0southern\\xc2\\xa0parts\\xc2\\xa0of\\xc2\\xa0the\\xc2\\xa0east\\xc2\\xa0coast\\xc2\\xa0indicates\\xc2\\xa0that\\xc2\\xa0southwest\\xc2\\xa0monsoon\\xc2\\xa0has\\xc2\\xa0\\r\\nwithdrawn\\xc2\\xa0from\\xc2\\xa0the\\xc2\\xa0remaining\\xc2\\xa0parts\\xc2\\xa0of\\xc2\\xa0the\\xc2\\xa0country,\\xc2\\xa0Bay\\xc2\\xa0of\\xc2\\xa0Bengal\\xc2\\xa0and\\xc2\\xa0Arabian\\xc2\\xa0sea.\\xc2\\xa0\\r\\n                \\r\\n                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>\\r\\n        </div>\\r\\n    \\r\\n        <!--div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        </div-->\\r\\n\\r\\n    <div class="about">\\r\\n                        M.R.Abhishek&nbsp&nbsp&nbsp&nbsp&nbsp -&nbsp&nbsp&nbsp&nbsp&nbsp 201511027\\r\\n</div>\\r\\n\\r\\n        <div class ="l" id="map" style="width:66%;height:650px"></div>\\r\\n   <div class="foot">\\r\\n            <font color="white" size="4">\\r\\n                Copyrights@123\\r\\n            </font>\\r\\n        </div>\\r\\n     \\r\\n       \\r\\n    </body>\\r\\n</html>\\r\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__hash__'
+p12
+S"<method-wrapper '__hash__' of exceptions.NameError object>"
+p13
+sS'__setattr__'
+p14
+S"<method-wrapper '__setattr__' of exceptions.NameError object>"
+p15
+sS'__reduce_ex__'
+p16
+S'<built-in method __reduce_ex__ of exceptions.NameError object>'
+p17
+sS'__getslice__'
+p18
+S"<method-wrapper '__getslice__' of exceptions.NameError object>"
+p19
+sS'__getitem__'
+p20
+S"<method-wrapper '__getitem__' of exceptions.NameError object>"
+p21
+sS'__setstate__'
+p22
+S'<built-in method __setstate__ of exceptions.NameError object>'
+p23
+sS'__reduce__'
+p24
+S'<built-in method __reduce__ of exceptions.NameError object>'
+p25
+sS'__str__'
+p26
+S"<method-wrapper '__str__' of exceptions.NameError object>"
+p27
+sS'__format__'
+p28
+S'<built-in method __format__ of exceptions.NameError object>'
+p29
+sS'__getattribute__'
+p30
+S"<method-wrapper '__getattribute__' of exceptions.NameError object>"
+p31
+sS'__class__'
+p32
+S"<type 'exceptions.NameError'>"
+p33
+sS'__unicode__'
+p34
+S'<built-in method __unicode__ of exceptions.NameError object>'
+p35
+sS'__delattr__'
+p36
+S"<method-wrapper '__delattr__' of exceptions.NameError object>"
+p37
+sS'__subclasshook__'
+p38
+S'<built-in method __subclasshook__ of type object>'
+p39
+sS'__repr__'
+p40
+S"<method-wrapper '__repr__' of exceptions.NameError object>"
+p41
+sS'args'
+p42
+S'("name \'read\' is not defined",)'
+p43
+sS'__dict__'
+p44
+S'{}'
+p45
+sS'__sizeof__'
+p46
+S'<built-in method __sizeof__ of exceptions.NameError object>'
+p47
+sS'__doc__'
+p48
+S"'Name not found globally.'"
+p49
+sS'__init__'
+p50
+S"<method-wrapper '__init__' of exceptions.NameError object>"
+p51
+sS'__new__'
+p52
+S'<built-in method __new__ of type object>'
+p53
+ssS'evalue'
+p54
+S"name 'read' is not defined"
+p55
+sS'request'
+p56
+cgluon.html
+XML_unpickle
+p57
+(S's\x85h\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>Aditya</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_aditya</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-fd23cfd0-965b-4ba6-b19f-a1acfe7bd750<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_pro</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-456bf44c-2ed4-4298-a28c-9b0722c636b8<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_weatherstation</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-bc08164b-125d-4c7c-bbd1-1ba35f23e875<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f3675ad5-6cc1-493d-a6eb-3707dfa6b496<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip,deflate,sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_weatherstation=127.0.0.1-bc08164b-125d-4c7c-bbd1-1ba35f23e875; session_id_pro=127.0.0.1-456bf44c-2ed4-4298-a28c-9b0722c636b8; session_id_welcome=127.0.0.1-f3675ad5-6cc1-493d-a6eb-3707dfa6b496; session_id_admin=127.0.0.1-fd23cfd0-965b-4ba6-b19f-a1acfe7bd750; session_id_aditya=127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/Aditya/controllers/default.py?id=controllers__default__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1622.7 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/Aditya/default/aboutus</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>51584</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>ADITYA</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\Aditya\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x2be7cd8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;ADITYA&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip,deflate,sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>en-US,en;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_weatherstation=127.0.0.1-bc08164b-125d-4c7c-bbd1-1ba35f23e875; session_id_pro=127.0.0.1-456bf44c-2ed4-4298-a28c-9b0722c636b8; session_id_welcome=127.0.0.1-f3675ad5-6cc1-493d-a6eb-3707dfa6b496; session_id_admin=127.0.0.1-fd23cfd0-965b-4ba6-b19f-a1acfe7bd750; session_id_aditya=127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/Aditya/controllers/default.py?id=controllers__default__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1622.7 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>fe80::10b4:e47c:e661:d1dd%25</div></td></tr><tr><td><div>fe80::1875:37bd:f5ff:fa0a%8</div></td></tr><tr><td><div>192.168.213.1</div></td></tr><tr><td><div>ADITYA</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>fe80::71a5:7592:2e6e:72b4%6</div></td></tr><tr><td><div>192.168.177.1</div></td></tr><tr><td><div>fe80::5090:b9cf:6372:6bf0%26</div></td></tr><tr><td><div>10.0.5.245</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>2001:0:5ef5:79fb:1875:37bd:f5ff:fa0a</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/Aditya/default/aboutus</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>51584</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/Aditya/default/aboutus</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>ADITYA</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x002AD0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x02D26110&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x07710D30&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x002AD0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x02D26110&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x07710D30&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>aboutus</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\Aditya\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x2be7cd8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;ADITYA&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>fe80::10b4:e47c:e661:d1dd%25</div></td></tr><tr><td><div>fe80::1875:37bd:f5ff:fa0a%8</div></td></tr><tr><td><div>192.168.213.1</div></td></tr><tr><td><div>ADITYA</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>fe80::71a5:7592:2e6e:72b4%6</div></td></tr><tr><td><div>192.168.177.1</div></td></tr><tr><td><div>fe80::5090:b9cf:6372:6bf0%26</div></td></tr><tr><td><div>10.0.5.245</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>2001:0:5ef5:79fb:1875:37bd:f5ff:fa0a</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 10, 30, 15, 47, 0, 154000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/Aditya/default/aboutus</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 10, 30, 10, 17, 0, 154000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x0771DA70&gt;</div></td></tr></table></div>'
+tRp58
+sS'frames'
+p59
+(lp60
+(dp61
+S'file'
+p62
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\restricted.py'
+p63
+sS'dump'
+p64
+(dp65
+S'environment'
+p66
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p67
+sS'ccode'
+p68
+S'<code object <module> at 0765A5C0, file "C:\\User...tions\\Aditya\\views\\default/aboutus.html", line 1>'
+p69
+ssS'lnum'
+p70
+I227
+sS'lines'
+p71
+(dp72
+I224
+S'            ccode = code'
+p73
+sI225
+S'        else:'
+p74
+sI226
+S'            ccode = compile2(code, layer)'
+p75
+sI227
+S'        exec ccode in environment'
+p76
+sI228
+S'    except HTTP:'
+p77
+sI229
+S'        raise'
+p78
+sI230
+S'    except RestrictedError:'
+p79
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p80
+sI222
+S'    try:'
+p81
+sI223
+S'        if isinstance(code, types.CodeType):'
+p82
+ssS'call'
+p83
+S'(code=\'response.write(\\\'<html>\\\\r\\\\n    <meta name="viewpo...   \\\\r\\\\n    </body>\\\\r\\\\n</html>\\\\r\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\views\\default/aboutus.html\')'
+p84
+sS'func'
+p85
+S'restricted'
+p86
+sa(dp87
+g62
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\views\\default\\aboutus.html'
+p88
+sg64
+(dp89
+S'content'
+p90
+S'undefined'
+p91
+sS'meta'
+p92
+g91
+sS'name'
+p93
+g91
+ssg70
+I2
+sg71
+(dp94
+I1
+S'response.write(\'<html>\\r\\n    <meta name="viewport" content="width=device-width, initial-scale=1">\\r\\n    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">\\r\\n    <style>\\r\\n        div.about{\\r\\n             font-family:"Comic Sans MS", cursive, sans-serif;\\r\\n            font-size:22px;\\r\\n            \\r\\n        }\\r\\n        div.find{\\r\\n            height:160px;\\r\\n            width:240px;\\r\\n            background:#ff5050;\\r\\n           \\r\\n        }\\r\\n        .imgWrap {\\r\\n  position: relative;\\r\\n\\r\\n}\\r\\n        #demo\\r\\n        {\\r\\n            color:white;\\r\\n        }\\r\\n\\r\\n.imgDescription {\\r\\n  position: absolute;\\r\\n  top: 0;\\r\\n  bottom: 0;\\r\\n  left: 0;\\r\\n  right: 0;\\r\\n  <!--background: rgba(29, 106, 154, 0.72);-->\\r\\n    background:#0033cc;\\r\\n color: white;\\r\\n\\r\\n\\r\\n  visibility: hidden;\\r\\n  opacity: 0;\\r\\n\\r\\n  /*remove comment if you want a gradual transition between states\\r\\n  -webkit-transition: visibility opacity 0.2s;\\r\\n  */\\r\\n}\\r\\n\\r\\n\\r\\n.imgWrap:hover .imgDescription {\\r\\n  visibility: visible;\\r\\n  opacity: 1;\\r\\n}\\r\\n        .w3-theme{\\r\\n            background-color:orange;\\r\\n        }\\r\\n        div.roll{\\r\\n            background-color: yellow;\\r\\n            font-size:15px;\\r\\n            color:red;\\r\\n        }\\r\\n        div.assg {\\r\\n            background-color: black;\\r\\n            color: white;\\r\\n            margin: 0px 0 0 0;\\r\\n            padding: 0px;\\r\\n        }\\r\\n        div.assd {\\r\\n            background-color: black;\\r\\n            float : left;\\r\\n            color: white;\\r\\n            margin: 0px 0 10px 0;\\r\\n            padding: 0px;\\r\\n            width: 140px;\\r\\n            height: 360px;\\r\\n        }\\r\\n        div.new {\\r\\n            margin: 0px 0 0px 0;\\r\\n            float : left;\\r\\n            <!--text-align:center;-->\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 0px;\\r\\n            width: 270px;\\r\\n            height: 650px;\\r\\n            background-color:"#9999ff"\\r\\n        }\\r\\n        div.su{\\r\\n         height:80px;   \\r\\n        }\\r\\n        div.news {\\r\\n            margin: 0px 0 0px 0;\\r\\n            float : right;\\r\\n            text-align:center;\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 10px;\\r\\n            width: 270px;\\r\\n            height: 670px;\\r\\n        }\\r\\n        div.foot{\\r\\n            background-color:black;\\r\\n            text-align:center;\\r\\n            margin: 650px 0 0 0;\\r\\n        }\\r\\n        div.l{\\r\\n            float:right;\\r\\n        }\\r\\n        #head{\\r\\n            position: relative;\\r\\n            background-color:#73e600;\\r\\n            color:#800000;\\r\\n            margin: 0 0 0 0;\\r\\n            padding: 18px;\\r\\n          text-align:center;\\r\\n            font-size:30px;\\r\\n            font-style:italic;\\r\\n            text-shadow:1px 1px 4px black;\\r\\n        }\\r\\n        #head img\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n          left: 15px;\\r\\n        }\\r\\n         #head img2\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n          right: 15px;\\r\\n        }\\r\\n        \\r\\n        div.img1{\\r\\n             top: 5px;\\r\\n          left: 5px;\\r\\n            padding-left: 2cm;\\r\\n        }\\r\\n        div.img2{\\r\\n             top: 20px;\\r\\n          right:5px;\\r\\n            padding-left: 75%;\\r\\n        }\\r\\n        a:link {\\r\\n            color: green;\\r\\n            background-color: transparent;\\r\\n            text-decoration: none;\\r\\n        }\\r\\n        a:hover {\\r\\n            color: red;\\r\\n            background-color: transparent;\\r\\n            text-decoration: none;\\r\\n        }\\r\\n.dropbtn {\\r\\n    background-color: black;\\r\\n    color: white;\\r\\n    padding: 6px;\\r\\n    font-size: 14px;\\r\\n    border: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.dropdown {\\r\\n    position: relative;\\r\\n    display: inline-block;\\r\\n}\\r\\n\\r\\n.dropdown-content {\\r\\n    display: none;\\r\\n    position: absolute;\\r\\n    background-color: #f9f9f9;\\r\\n    min-width: 85px;\\r\\n     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);\\r\\n}\\r\\n\\r\\n.dropdown-content a {\\r\\n    color: black;\\r\\n    padding: 6px 8px;\\r\\n    text-decoration: none;\\r\\n    display: block;\\r\\n}\\r\\n\\r\\n.dropdown-content a:hover {background-color: pink;}\\r\\n\\r\\n.dropdown:hover .dropdown-content {\\r\\n    display: block;\\r\\n}\\r\\n\\r\\n.dropdown:hover .dropbtn {\\r\\n    background-color: grey;\\r\\n}\\r\\n         .sidenav {\\r\\n    height: 100%;\\r\\n    width: 0;\\r\\n    position: fixed;\\r\\n    z-index: 1;\\r\\n    top: 0;\\r\\n    left: 0;\\r\\n    background-color: black;\\r\\n    overflow-x: hidden;\\r\\n    transition: 0.5s;\\r\\n    padding-top: 60px;\\r\\n    <!--text-align:center;-->\\r\\n}\\r\\n\\r\\n.sidenav a {\\r\\n    padding: 8px 8px 8px 32px;\\r\\n    text-decoration: none;\\r\\n    font-size: 25px;\\r\\n    color: red;\\r\\n    display: block;\\r\\n    transition: 0.3s\\r\\n\\r\\n}\\r\\n\\r\\n.sidenav a:hover{\\r\\n    color:red;\\r\\n}\\r\\n\\r\\n.sidenav .closebtn {\\r\\n    position: absolute;\\r\\n    top: 0;\\r\\n    right: 25px;\\r\\n    font-size: 36px;\\r\\n    margin-left: 50px;\\r\\n}\\r\\n\\r\\n#main {\\r\\n    transition: margin-left .5s;\\r\\n    padding: 16px;\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n@media screen and (max-height: 450px) {\\r\\n  .sidenav {padding-top: 15px;}\\r\\n  .sidenav a {font-size: 18px;}\\r\\n}\\r\\n\\r\\n        .modal {\\r\\n    display: none; /* Hidden by default */\\r\\n    position: fixed; /* Stay in place */\\r\\n    z-index: 1; /* Sit on top */\\r\\n    padding-top: 100px; /* Location of the box */\\r\\n    left: 0;\\r\\n    top: 0;\\r\\n    width: 100%; /* Full width */\\r\\n    height: 100%; /* Full height */\\r\\n    overflow: auto; /* Enable scroll if needed */\\r\\n    background-color: rgb(0,0,0); /* Fallback color */\\r\\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\\r\\n}\\r\\n\\r\\n/* Modal Content */\\r\\n.modal-content {\\r\\n    position: relative;\\r\\n    background-color: pink;\\r\\n    margin: auto;\\r\\n    padding: 0;\\r\\n    border: 1px solid #888;\\r\\n    width: 80%;\\r\\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\\r\\n    -webkit-animation-name: animatetop;\\r\\n    -webkit-animation-duration: 0.4s;\\r\\n    animation-name: animatetop;\\r\\n    animation-duration: 0.4s\\r\\n}\\r\\n\\r\\n/* Add Animation */\\r\\n@-webkit-keyframes animatetop {\\r\\n    from {top:-300px; opacity:0}\\r\\n    to {top:0; opacity:1}\\r\\n}\\r\\n\\r\\n@keyframes animatetop {\\r\\n    from {top:-300px; opacity:0}\\r\\n    to {top:0; opacity:1}\\r\\n}\\r\\n\\r\\n/* The Close Button */\\r\\n.close {\\r\\n    color: white;\\r\\n    float: right;\\r\\n    font-size: 28px;\\r\\n    font-weight: bold;\\r\\n}\\r\\n\\r\\n.close:hover,\\r\\n.close:focus {\\r\\n    color: #000;\\r\\n    text-decoration: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.modal-header {\\r\\n    padding: 2px 16px;\\r\\n    background-color: #9933ff;\\r\\n    color: white;\\r\\n}\\r\\n\\r\\n.modal-body {\\r\\n    padding: 2px 16px;\\r\\n    background-color:#ffcc99;\\r\\n    color:black;\\r\\n}\\r\\n\\r\\n.modal-footer {\\r\\n    padding: 2px 16px;\\r\\n    background-color: #5cb85c;\\r\\n    color: white;\\r\\n}\\r\\n\\r\\n.mybtn{\\r\\n    background-color:black;\\r\\n    color:pink;\\r\\n}\\r\\n\\r\\n        /////////////\\r\\n\\r\\n    </style>\\r\\n    <body class="w3-theme">\\r\\n        <div class="assg">\\r\\n            <div id="head">\\r\\n                \\r\\n                   \\r\\n               <a href="http://127.0.0.1:8000/Aditya/default/index?">\\r\\n                <img  src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" width="75" height="60"></a>\\r\\n                       \\r\\n\\r\\n               Weather Station\\r\\n                                  <!--img class="img2" src="http://www.clipartpal.com/_thumbs/pd/weather/weather_vane.png" alt="Adi"  width="75" height="60"-->\\r\\n\\r\\n            </div>\\r\\n            <table>\\r\\n                <tr>\\r\\n                    <td>&nbsp</td>\\r\\n                </tr>\\r\\n                <tr>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover">\\r\\n                            <form action="index">\\r\\n                                <button class="w3-btn w3-black">Home &nbsp&nbsp<img src="http://findicons.com/files/icons/1261/sticker_system/128/home.png" height="30" width="30"></button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="temperature" >\\r\\n                                <button class="w3-btn w3-black">Temperature</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="pressure" >\\r\\n                                <button class="w3-btn w3-black">Pressure</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td width="450">\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="humidity" >\\r\\n                                <button class="w3-btn w3-black">Humidity</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td width="550">\\r\\n                         <button class="w3-btn w3-black">\\r\\n                        <script type="text/javascript">\\r\\ntday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");\\r\\ntmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");\\r\\n\\r\\nfunction GetClock(){\\r\\nvar d=new Date();\\r\\nvar nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();\\r\\nif(nyear<1000) nyear+=1900;\\r\\nvar nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;\\r\\n\\r\\nif(nhour==0){ap=" AM";nhour=12;}\\r\\nelse if(nhour<12){ap=" AM";}\\r\\nelse if(nhour==12){ap=" PM";}\\r\\nelse if(nhour>12){ap=" PM";nhour-=12;}\\r\\n\\r\\nif(nmin<=9) nmin="0"+nmin;\\r\\nif(nsec<=9) nsec="0"+nsec;\\r\\n\\r\\ndocument.getElementById(\\\'clockbox\\\').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";\\r\\n}\\r\\n\\r\\nwindow.onload=function(){\\r\\nGetClock();\\r\\nsetInterval(GetClock,1000);\\r\\n}\\r\\n</script>\\r\\n<div id="clockbox"></div>\\r\\n</button>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                         <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="contactus" >\\r\\n                                <button class="w3-btn w3-black">Contact&nbsp Us</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="signup args=" "" >\\r\\n                                <button class="w3-btn w3-black">SignUp</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    \\r\\n                    <td width="5%">\\r\\n                        <div class="imgWrap">\\r\\n  <!--a href="http://www.facebook.com" target="_blank"-->\\r\\n                              <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="http://www.facebook.com" >\\r\\n                                <button class="w3-btn w3-black">\\r\\n                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30"></button>\\r\\n                                </form>\\r\\n                        </div>\\r\\n                        </a>\\r\\n  <p class="imgDescription">Join us on Facebook</p>\\r\\n</div>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td width="5%">\\r\\n                         <div class="imgWrap">\\r\\n  <!--a href="http://www.twitter.com" target="_blank"-->\\r\\n                              <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="http://www.twitter.com" >\\r\\n                                <button class="w3-btn w3-black">\\r\\n                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">\\r\\n                            </button>\\r\\n                                </form>\\r\\n                        </div>\\r\\n\\r\\n                        </a>\\r\\n                             <p class="imgDescription">Follow us on Twitter</p>\\r\\n</div>\\r\\n                        \\r\\n                    </td>\\r\\n                    \\r\\n                </tr>\\r\\n            </table>\\r\\n        </div>\\r\\n        <div class="roll">\\r\\n            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">\\r\\n                <i>Place &nbsp : &nbsp Max &nbsp/ &nbsp Min Temp&nbsp,&nbsp&nbsp</i></font>\\r\\n                \', escape=False)'
+p95
+sI2
+S'for i in read:'
+p96
+sI3
+S'    response.write(\'\\r\\n                <font color="blue">\', escape=False)'
+p97
+sI4
+S'    response.write(i.place)'
+p98
+sI5
+S'    response.write(\'</font>&nbsp :\\r\\n                <font color="green">\', escape=False)'
+p99
+sI6
+S'    response.write(i.high_temparature)'
+p100
+sI7
+S'    response.write(\'&nbsp / </font>\\r\\n                <font color="black">\', escape=False)'
+p101
+sI8
+S'    response.write(i.low_temparature)'
+p102
+sI9
+S"    response.write('&nbsp,&nbsp</font>\\r\\n                 ', escape=False)"
+p103
+sI10
+S'    pass'
+p104
+sI11
+S'response.write(\'\\r\\n                \\r\\n            </marquee>\\r\\n        </div>\\r\\n        <!--div class="assd">\\r\\n            <tr>\\r\\n                <form action="temperature">\\r\\n                    <button class="w3-btn w3-black">Temprature</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="pressure">\\r\\n                    <button class="w3-btn w3-black">Pressure</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Humidity</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Rainfall</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Others</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Contact Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">About Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n        </div-->\\r\\n        <div class="new">\\r\\n<tr>\\r\\n<div id="mySidenav" class="sidenav">\\r\\n\\r\\n  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\\r\\n  <center>\\r\\n  <button id="myBtn" class="mybtn">Chennai</button><br><br><br><br>\\r\\n  <button id="myBtn_1" class="mybtn">Vijayawada</button><br><br><br><br>\\r\\n  <button id="myBtn_2" class="mybtn">Amalapuram</button><br><br><br><br>\\r\\n  <button id="myBtn_3" class="mybtn">Guntur</button><br><br><br><br>\\r\\n  <button id="myBtn_4" class="mybtn">Vishakhaptnam</button>\\r\\n  </center>\\r\\n</div>\\r\\n\\r\\n\\r\\n<!--span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Places</span-->\\r\\n\\r\\n\\r\\n<div id="main">\\r\\n  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#x2630; Places</span>\\r\\n</div>\\r\\n\\r\\n\\r\\n<script>\\r\\nfunction openNav() {\\r\\n    document.getElementById("mySidenav").style.width = "285px";\\r\\n   // document.getElementById("main").style.marginLeft = "150px";\\r\\n}\\r\\n\\r\\nfunction closeNav() {\\r\\n    document.getElementById("mySidenav").style.width = "0";\\r\\n    //document.getElementById("main").style.marginLeft= "0";\\r\\n}\\r\\n</script>\\r\\n\\r\\n\\r\\n<div id="myModal" class="modal">\\r\\n\\r\\n  <!-- Modal content -->\\r\\n  <div class="modal-content">\\r\\n    <div class="modal-header">\\r\\n      <span class="close">\\xc3\\x97</span>\\r\\n      <h2>Weather Report</h2>\\r\\n    </div>\\r\\n    <div class="modal-body" >\\r\\n      <p>Temperature: 29.6\\xc2\\xb0C</p>\\r\\n      <p>Pressure: 1219 hPa</p>\\r\\n         <p>Humidity: 40%</p>\\r\\n    </div>\\r\\n  </div>\\r\\n    \\r\\n    \\r\\n    \\r\\n    \\r\\n    \\r\\n\\r\\n</div>\\r\\n<script>\\r\\n// Get the modal\\r\\nvar modal = document.getElementById(\\\'myModal\\\');\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_1");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_2");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_3");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_4");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n</script>\\r\\n            </tr>\\r\\n            \\r\\n            \\r\\n            <font color="black" >\\r\\n                \\r\\n                <a href="imd_sensors" >  &nbsp&nbsp&nbsp&#9776;IMD SENSORS</a><br><br>\\r\\n                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>\\r\\n                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>\\r\\n                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp&#9776; IIIT CHITTOR</a><br>\\r\\n                </br></font>\\r\\n            \\r\\n            \\r\\n            \\r\\n            <br><br><br><br>\\r\\n            <div class="find"><center><br>\\r\\n            <form action="find">\\r\\n                Enter the city:<input type="text" name="name"></input>\\r\\n                <br><br>\\r\\n<button type="submit">\\r\\n    Submit\\r\\n</button>\\r\\n                </form></center></div>\\r\\n            \\r\\n        </div>\\r\\n        \\r\\n        \\r\\n        \\r\\n        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->\\r\\n       \\r\\n        <div class="news" >\\r\\n             <div class="su">\\r\\n                 <br>\\r\\n                 <img src="http://www.metalvideos.net/Updates.gif" alt="Suma" height="50" width="170">\\r\\n</div>\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai.<br><br>-The Weather Station plans to celebrate Environmental Day in association with UNESCO.<br><br>-Heavy rains at Tirupati.<br> <br>-Ms.Jayalalitha inaugurates a sub-station of the IMD at the Nilgiri hills.\\r\\n                \\r\\n               <br> <br>- Setting\\xc2\\xa0in\\xc2\\xa0of\\xc2\\xa0northeasterly\\xc2\\xa0winds\\xc2\\xa0along\\xc2\\xa0southern\\xc2\\xa0parts\\xc2\\xa0of\\xc2\\xa0the\\xc2\\xa0east\\xc2\\xa0coast\\xc2\\xa0indicates\\xc2\\xa0that\\xc2\\xa0southwest\\xc2\\xa0monsoon\\xc2\\xa0has\\xc2\\xa0\\r\\nwithdrawn\\xc2\\xa0from\\xc2\\xa0the\\xc2\\xa0remaining\\xc2\\xa0parts\\xc2\\xa0of\\xc2\\xa0the\\xc2\\xa0country,\\xc2\\xa0Bay\\xc2\\xa0of\\xc2\\xa0Bengal\\xc2\\xa0and\\xc2\\xa0Arabian\\xc2\\xa0sea.\\xc2\\xa0\\r\\n                \\r\\n                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>\\r\\n        </div>\\r\\n    \\r\\n        <!--div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        </div-->\\r\\n\\r\\n    <div class="about">\\r\\n                        M.R.Abhishek&nbsp&nbsp&nbsp&nbsp&nbsp -&nbsp&nbsp&nbsp&nbsp&nbsp 201511027\\r\\n</div>\\r\\n\\r\\n        <div class ="l" id="map" style="width:66%;height:650px"></div>\\r\\n   <div class="foot">\\r\\n            <font color="white" size="4">\\r\\n                Copyrights@123\\r\\n            </font>\\r\\n        </div>\\r\\n     \\r\\n       \\r\\n    </body>\\r\\n</html>\\r\\n\', escape=False)'
+p105
+ssg83
+S'()'
+p106
+sg85
+S'<module>'
+p107
+sasS'pyver'
+p108
+S'Python 2.7.9: C:\\Users\\G. ADITYA\\Desktop\\web2py\\web2py.exe (prefix: )'
+p109
+sS'session'
+p110
+g57
+(S's\xbb\x01\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.Readings.id&gt;0</div></td></tr></table></div>'
+tRp111
+sS'etype'
+p112
+S"<type 'exceptions.NameError'>"
+p113
+sS'date'
+p114
+S'Sun Oct 30 15:47:00 2016'
+p115
+sS'response'
+p116
+g57
+(S's\x03?\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x082CE3A0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_aditya</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">logo</td><td style="vertical-align:top;">:</td><td><div><a class="navbar-brand" href="http://www.web2py.com/" id="web2py-logo"><b>web<span>2</span>py</b>&trade;&nbsp;</a></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Home</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Aditya/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>My Sites</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>This App</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Design</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/Aditya</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Controller</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>View</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/views/default/aboutus.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>DB Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/models/db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Menu Model</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Layout</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Stylesheet</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Aditya/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Aditya/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errors</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/Aditya</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>About</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/Aditya</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Download</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Support</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Quick Examples</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>FAQ</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Videos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Free Applications</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentation</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Online book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><li class="divider"></li></div></td></tr><tr><td><div><table><tr><td><div>Preface</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introduction</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Overview</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Core</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>The Views</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Database</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Forms and Validators</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Email and SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Access Control</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Services</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ajax Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Components and Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Deployment Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Other Recipes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Helping web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Buy web2py\'s book</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Community</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Groups</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Live Chat</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div>web2py, python, framework</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/aboutus/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_aditya</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;C:\\\\Users\\\\G. ADITYA\\\\Desktop\\\\web2py\\\\applications\\\\Aditya\\\\sessions\\\\0fa\\\\066\\\\127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905&#x27;, mode &#x27;rb+&#x27; at 0x072117B0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\sessions\\127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>cc340e14b4f1a79ca874b7c029634f21</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_aditya</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>Aditya</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">subtitle</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">title</td><td style="vertical-align:top;">:</td><td><div>Aditya</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/aboutus.html</div></td></tr></table></div>'
+tRp117
+sS'locals'
+p118
+(dp119
+S'Service'
+p120
+S"<class 'gluon.tools.Service'>"
+p121
+sS'OBJECT'
+p122
+S"<class 'gluon.html.OBJECT'>"
+p123
+sS'SQLDB'
+p124
+S"<class 'pydal.base.DAL'>"
+p125
+sg110
+S"<Storage {'_formkey[default]': ['11323683-7369-4...1dfce2a9fa2'], 'last_query': 'db.Readings.id>0'}>"
+p126
+sS'LINK'
+p127
+S"<class 'gluon.html.LINK'>"
+p128
+sS'BR'
+p129
+S"<class 'gluon.html.BR'>"
+p130
+sS'local_import'
+p131
+S'<function <lambda>>'
+p132
+sS'OPTGROUP'
+p133
+S"<class 'gluon.html.OPTGROUP'>"
+p134
+sS'__package__'
+p135
+S'None'
+p136
+sS'PRE'
+p137
+S"<class 'gluon.html.PRE'>"
+p138
+sS'IS_INT_IN_RANGE'
+p139
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p140
+sS'IS_LOWER'
+p141
+S"<class 'gluon.validators.IS_LOWER'>"
+p142
+sS'IS_STRONG'
+p143
+S"<class 'gluon.validators.IS_STRONG'>"
+p144
+sS'cache'
+p145
+S'<gluon.cache.Cache object>'
+p146
+sS'IS_IN_DB'
+p147
+S"<class 'gluon.validators.IS_IN_DB'>"
+p148
+sS'TAG'
+p149
+S'<gluon.html.__TAG__ object>'
+p150
+sS'SQLField'
+p151
+S"<class 'pydal.objects.Field'>"
+p152
+sS'mail'
+p153
+S'<gluon.tools.Mail object>'
+p154
+sS'BODY'
+p155
+S"<class 'gluon.html.BODY'>"
+p156
+sS'IS_DATE_IN_RANGE'
+p157
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p158
+sS'IFRAME'
+p159
+S"<class 'gluon.html.IFRAME'>"
+p160
+sS'URL'
+p161
+S'<function URL>'
+p162
+sS'__file__'
+p163
+S"r'C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\views\\default/aboutus.html'"
+p164
+sS'db'
+p165
+S'<DAL uri="sqlite://storage.sqlite">'
+p166
+sS'auth'
+p167
+S'<gluon.tools.Auth object>'
+p168
+sS'P'
+S"<class 'gluon.html.P'>"
+p169
+sS'TFOOT'
+p170
+S"<class 'gluon.html.TFOOT'>"
+p171
+sS'XHTML'
+p172
+S"<class 'gluon.html.XHTML'>"
+p173
+sS'ON'
+p174
+S'True'
+p175
+sS'OL'
+p176
+S"<class 'gluon.html.OL'>"
+p177
+sS'TEXTAREA'
+p178
+S"<class 'gluon.html.TEXTAREA'>"
+p179
+sS'MENU'
+p180
+S"<class 'gluon.html.MENU'>"
+p181
+sS'IS_IMAGE'
+p182
+S"<class 'gluon.validators.IS_IMAGE'>"
+p183
+sS'EM'
+p184
+S"<class 'gluon.html.EM'>"
+p185
+sS'CODE'
+p186
+S"<class 'gluon.html.CODE'>"
+p187
+sS'HTTP'
+p188
+S"<class 'gluon.http.HTTP'>"
+p189
+sS'HR'
+p190
+S"<class 'gluon.html.HR'>"
+p191
+sS'IS_DATETIME'
+p192
+S"<class 'gluon.validators.IS_DATETIME'>"
+p193
+sS'STYLE'
+p194
+S"<class 'gluon.html.STYLE'>"
+p195
+sS'LABEL'
+p196
+S"<class 'gluon.html.LABEL'>"
+p197
+sS'CLEANUP'
+p198
+S"<class 'gluon.validators.CLEANUP'>"
+p199
+sS'plugins'
+p200
+S'<gluon.tools.PluginManager object>'
+p201
+sS'SELECT'
+p202
+S"<class 'gluon.html.SELECT'>"
+p203
+sS'CENTER'
+p204
+S"<class 'gluon.html.CENTER'>"
+p205
+sS'Auth'
+p206
+S"<class 'gluon.tools.Auth'>"
+p207
+sS'DEVELOPMENT_MENU'
+p208
+g175
+sS'__builtins__'
+p209
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p210
+sS'HTML'
+p211
+S"<class 'gluon.html.HTML'>"
+p212
+sS'SQLFORM'
+p213
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p214
+sS'LOAD'
+p215
+S'<function LOAD>'
+p216
+sS'redirect'
+p217
+S'<function redirect>'
+p218
+sS'FIELDSET'
+p219
+S"<class 'gluon.html.FIELDSET'>"
+p220
+sS'IS_EQUAL_TO'
+p221
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p222
+sS'embed64'
+p223
+S'<function embed64>'
+p224
+sS'IS_LIST_OF'
+p225
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p226
+sS'INPUT'
+p227
+S"<class 'gluon.html.INPUT'>"
+p228
+sS'EMBED'
+p229
+S"<class 'gluon.html.EMBED'>"
+p230
+sS'_'
+S'<function _>'
+p231
+sS'myconf'
+p232
+S"{'forms': {'formstyle': 'bootstrap3_inline', 'se...'you@gmail.com', 'server': 'smtp.gmail.com:587'}}"
+p233
+sS'H2'
+p234
+S"<class 'gluon.html.H2'>"
+p235
+sS'H3'
+p236
+S"<class 'gluon.html.H3'>"
+p237
+sS'AppConfig'
+p238
+S'<function AppConfig>'
+p239
+sS'H1'
+p240
+S"<class 'gluon.html.H1'>"
+p241
+sS'H6'
+p242
+S"<class 'gluon.html.H6'>"
+p243
+sS'H4'
+p244
+S"<class 'gluon.html.H4'>"
+p245
+sS'H5'
+p246
+S"<class 'gluon.html.H5'>"
+p247
+sS'UL'
+p248
+S"<class 'gluon.html.UL'>"
+p249
+sS'IS_UPPER'
+p250
+S"<class 'gluon.validators.IS_UPPER'>"
+p251
+sS'xmlescape'
+p252
+S'<function xmlescape>'
+p253
+sS'IS_TIME'
+p254
+S"<class 'gluon.validators.IS_TIME'>"
+p255
+sS'OPTION'
+p256
+S"<class 'gluon.html.OPTION'>"
+p257
+sS'TITLE'
+p258
+S"<class 'gluon.html.TITLE'>"
+p259
+sS'CRYPT'
+p260
+S"<class 'gluon.validators.CRYPT'>"
+p261
+sS'IS_EMPTY_OR'
+p262
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p263
+sS'MARKMIN'
+p264
+S"<class 'gluon.html.MARKMIN'>"
+p265
+sS'__name__'
+p266
+S"'__restricted__'"
+p267
+sS'STRONG'
+p268
+S"<class 'gluon.html.STRONG'>"
+p269
+sS'COL'
+p270
+S"<class 'gluon.html.COL'>"
+p271
+sS'service'
+p272
+S'<gluon.tools.Service object>'
+p273
+sS'SCRIPT'
+p274
+S"<class 'gluon.html.SCRIPT'>"
+p275
+sS'TABLE'
+p276
+S"<class 'gluon.html.TABLE'>"
+p277
+sS'IS_IPV4'
+p278
+S"<class 'gluon.validators.IS_IPV4'>"
+p279
+sS'IS_LENGTH'
+p280
+S"<class 'gluon.validators.IS_LENGTH'>"
+p281
+sS'IS_IPV6'
+p282
+S"<class 'gluon.validators.IS_IPV6'>"
+p283
+sS'XML'
+p284
+S"<class 'gluon.html.XML'>"
+p285
+sS'B'
+S"<class 'gluon.html.B'>"
+p286
+sS'IMG'
+p287
+S"<class 'gluon.html.IMG'>"
+p288
+sS'SQLTABLE'
+p289
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p290
+sS'IS_MATCH'
+p291
+S"<class 'gluon.validators.IS_MATCH'>"
+p292
+sS'IS_ALPHANUMERIC'
+p293
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p294
+sS'SPAN'
+p295
+S"<class 'gluon.html.SPAN'>"
+p296
+sS'IS_JSON'
+p297
+S"<class 'gluon.validators.IS_JSON'>"
+p298
+sS'IS_IPADDRESS'
+p299
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p300
+sS'IS_SLUG'
+p301
+S"<class 'gluon.validators.IS_SLUG'>"
+p302
+sS'BEAUTIFY'
+p303
+S"<class 'gluon.html.BEAUTIFY'>"
+p304
+sS'META'
+p305
+S"<class 'gluon.html.META'>"
+p306
+sS'BUTTON'
+p307
+S"<class 'gluon.html.BUTTON'>"
+p308
+sS'IS_DATE'
+p309
+S"<class 'gluon.validators.IS_DATE'>"
+p310
+sS'IS_EMAIL'
+p311
+S"<class 'gluon.validators.IS_EMAIL'>"
+p312
+sS'IS_NOT_EMPTY'
+p313
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p314
+sS'IS_FLOAT_IN_RANGE'
+p315
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p316
+sS'TBODY'
+p317
+S"<class 'gluon.html.TBODY'>"
+p318
+sS'CAT'
+p319
+S"<class 'gluon.html.CAT'>"
+p320
+sS'Field'
+p321
+S"<class 'pydal.objects.Field'>"
+p322
+sS'IS_LIST_OF_EMAILS'
+p323
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p324
+sS'DIV'
+p325
+S"<class 'gluon.html.DIV'>"
+p326
+sS'LEGEND'
+p327
+S"<class 'gluon.html.LEGEND'>"
+p328
+sS'COLGROUP'
+p329
+S"<class 'gluon.html.COLGROUP'>"
+p330
+sS'DAL'
+p331
+S"<class 'pydal.base.DAL'>"
+p332
+sS'ASSIGNJS'
+p333
+S'<function ASSIGNJS>'
+p334
+sS'TR'
+p335
+S"<class 'gluon.html.TR'>"
+p336
+sS'LI'
+p337
+S"<class 'gluon.html.LI'>"
+p338
+sS'TH'
+p339
+S"<class 'gluon.html.TH'>"
+p340
+sS'TD'
+p341
+S"<class 'gluon.html.TD'>"
+p342
+sS'PluginManager'
+p343
+S"<class 'gluon.tools.PluginManager'>"
+p344
+sS'IS_URL'
+p345
+S"<class 'gluon.validators.IS_URL'>"
+p346
+sS'A'
+S"<class 'gluon.html.A'>"
+p347
+sS'HEAD'
+p348
+S"<class 'gluon.html.HEAD'>"
+p349
+sS'IS_DATETIME_IN_RANGE'
+p350
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p351
+sS'FORM'
+p352
+S"<class 'gluon.html.FORM'>"
+p353
+sS'I'
+S"<class 'gluon.html.I'>"
+p354
+sS'IS_NOT_IN_DB'
+p355
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p356
+sg116
+S"<Storage {'body': <cStringIO.StringO object at 0... at 0x07710AF0>, 'view': 'default/aboutus.html'}>"
+p357
+sS'THEAD'
+p358
+S"<class 'gluon.html.THEAD'>"
+p359
+sS'ANY_OF'
+p360
+S"<class 'gluon.validators.ANY_OF'>"
+p361
+sS'IS_NULL_OR'
+p362
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p363
+sg56
+S"<Storage {'_vars': None, 'function': 'aboutus', ...DITYA\\\\Desktop\\\\web2py\\\\applications\\\\Aditya\\\\'}>"
+p364
+sS'IS_EXPR'
+p365
+S"<class 'gluon.validators.IS_EXPR'>"
+p366
+sS'T'
+S'<gluon.languages.translator object>'
+p367
+sS'IS_IN_SET'
+p368
+S"<class 'gluon.validators.IS_IN_SET'>"
+p369
+sS'IS_UPLOAD_FILENAME'
+p370
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p371
+sS'TT'
+p372
+S"<class 'gluon.html.TT'>"
+p373
+sS'IS_DECIMAL_IN_RANGE'
+p374
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p375
+sssS'traceback'
+p376
+S'Traceback (most recent call last):\n  File "C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "C:\\Users\\G. ADITYA\\Desktop\\web2py\\applications\\Aditya\\views\\default/aboutus.html", line 2, in <module>\n    <meta name="viewport" content="width=device-width, initial-scale=1">\nNameError: name \'read\' is not defined\n'
+p377
+s.

@@ -1,0 +1,849 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style>
+        div.find{
+            height:150px;
+            width:200px;
+            background:red;
+        }
+        .imgWrap {
+  position: relative;
+
+}
+        #demo
+        {
+            color:white;
+        }
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  <!--background: rgba(29, 106, 154, 0.72);-->
+    background:#0033cc;
+ color: white;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+        .w3-theme{
+            background-color:orange;
+        }
+        div.roll{
+            background-color: yellow;
+            font-size:15px;
+            color:red;
+        }
+        div.assg {
+            background-color: black;
+            color: white;
+            margin: 0px 0 0 0;
+            padding: 0px;
+        }
+        div.assd {
+            background-color: black;
+            float : left;
+            color: white;
+            margin: 0px 0 10px 0;
+            padding: 0px;
+            width: 140px;
+            height: 360px;
+        }
+        div.new {
+            margin: 0px 0 0px 0;
+            float : left;
+            <!--text-align:center;-->
+            font-size:15px;
+            color:black;
+            margin:0 0 0 0px;
+            width: 270px;
+            height: 650px;
+            background-color:"#9999ff"
+        }
+        div.su{
+         height:80px;   
+        }
+        div.news {
+            margin: 0px 0 0px 0;
+            float : right;
+            text-align:center;
+            font-size:15px;
+            color:black;
+            margin:0 0 0 10px;
+            width: 270px;
+            height: 670px;
+        }
+        div.foot{
+            background-color:black;
+            text-align:center;
+            margin: 650px 0 0 0;
+        }
+        div.l{
+            float:right;
+        }
+        #head{
+            position: relative;
+            background-color:#73e600;
+            color:#800000;
+            margin: 0 0 0 0;
+            padding: 18px;
+          text-align:center;
+            font-size:30px;
+            font-style:italic;
+            text-shadow:1px 1px 4px black;
+        }
+        #head img
+        {
+            position: absolute;
+            top: 5px;
+          left: 15px;
+        }
+         #head img2
+        {
+            position: absolute;
+            top: 5px;
+          right: 15px;
+        }
+        
+        div.img1{
+             top: 5px;
+          left: 5px;
+            padding-left: 2cm;
+        }
+        div.img2{
+             top: 20px;
+          right:5px;
+            padding-left: 75%;
+        }
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 85px;
+     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+         .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    <!--text-align:center;-->
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color:red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+        .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: pink;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #9933ff;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color:#ffcc99;
+    color:black;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.mybtn{
+    background-color:black;
+    color:pink;
+}
+
+        /////////////
+
+    </style>
+    <body class="w3-theme">
+        <div class="assg">
+            <div id="head">
+                
+                   
+               <a href="http://127.0.0.1:8000/Aditya/default/index?">
+                <img  src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" width="75" height="60"></a>
+                       
+
+               Weather Station
+                                  <!--img class="img2" src="http://www.clipartpal.com/_thumbs/pd/weather/weather_vane.png" alt="Adi"  width="75" height="60"-->
+
+            </div>
+            <table>
+                <tr>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="w3-dropdown-hover">
+                            <form action="index">
+                                <button class="w3-btn w3-black">Home &nbsp&nbsp<img src="http://findicons.com/files/icons/1261/sticker_system/128/home.png" height="30" width="30"></button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="temperature" >
+                                <button class="w3-btn w3-black">Temperature</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="pressure" >
+                                <button class="w3-btn w3-black">Pressure</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="500">
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="humidity" >
+                                <button class="w3-btn w3-black">Humidity</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="550">
+                         <button class="w3-btn w3-black">
+                        <script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+</button>
+                    </td>
+                    <td>
+                         <div class="w3-dropdown-hover" align="right">
+                            <form action="contactus" >
+                                <button class="w3-btn w3-black">Contact&nbsp Us</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="signup" >
+                                <button class="w3-btn w3-black">SignUp</button>
+                            </form>
+                        </div>
+                    </td>
+                    
+                    <td width="5%">
+                        <div class="imgWrap">
+  <!--a href="http://www.facebook.com" target="_blank"-->
+                              <div class="w3-dropdown-hover" align="right">
+                            <form action="http://www.facebook.com" >
+                                <button class="w3-btn w3-black">
+                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30"></button>
+                                </form>
+                        </div>
+                        </a>
+  <p class="imgDescription">Join us on Facebook</p>
+</div>
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td width="5%">
+                         <div class="imgWrap">
+  <!--a href="http://www.twitter.com" target="_blank"-->
+                              <div class="w3-dropdown-hover" align="right">
+                            <form action="http://www.twitter.com" >
+                                <button class="w3-btn w3-black">
+                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">
+                            </button>
+                                </form>
+                        </div>
+
+                        </a>
+                             <p class="imgDescription">Follow us on Twitter</p>
+</div>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="roll">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">
+                <i>Place &nbsp : &nbsp Max &nbsp/ &nbsp Min Temp&nbsp,&nbsp&nbsp</i></font>
+                <font color="blue">Chennai</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp,&nbsp</font>
+                 <font color="blue">Sullurpeta</font>&nbsp :
+                <font color="green">33&nbsp / </font>
+                <font color="black">27&nbsp,&nbsp</font>
+                 <font color="blue">Tada</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp,&nbsp</font>
+                <font color="blue">Bangalore</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp,&nbsp</font>
+                 <font color="blue">Mumbai</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp,&nbsp</font>
+                 <font color="blue">Tirupathi</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp,&nbsp</font>
+                 <font color="blue">Hyderabad</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp,&nbsp</font>
+                 <font color="blue">Visakhapatnam</font>&nbsp :
+                <font color="green">35&nbsp / </font>
+                <font color="black">23&nbsp&nbsp</font>
+            </marquee>
+        </div>
+        <!--div class="assd">
+            <tr>
+                <form action="temperature">
+                    <button class="w3-btn w3-black">Temprature</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="pressure">
+                    <button class="w3-btn w3-black">Pressure</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Humidity</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Rainfall</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Others</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Contact Us</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">About Us</button>
+                </form>
+            </tr>
+        </div-->
+        <div class="new">
+<tr>
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <center>
+  <button id="myBtn" class="mybtn">Chennai</button><br><br><br><br>
+  <button id="myBtn_1" class="mybtn">Vijayawada</button><br><br><br><br>
+  <button id="myBtn_2" class="mybtn">Amalapuram</button><br><br><br><br>
+  <button id="myBtn_3" class="mybtn">Guntur</button><br><br><br><br>
+  <button id="myBtn_4" class="mybtn">Vishakhaptnam</button>
+  </center>
+</div>
+
+
+<!--span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Places</span-->
+
+
+<div id="main">
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#x2630; Places</span>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "285px";
+   // document.getElementById("main").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    //document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Weather Report</h2>
+    </div>
+    <div class="modal-body" >
+      <p>Temperature: 29.6°C</p>
+      <p>Pressure: 1219 hPa</p>
+         <p>Humidity: 40%</p>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            </tr>
+            
+            
+            <font color="black" >
+                
+                <a href="imd_sensors" >  &nbsp&nbsp&nbsp&#9776;IMD SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>
+                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp&#9776; IIIT CHITTOR</a><br>
+                </br></font>
+            
+            
+            
+            <br><br><br><br>
+            <div class="find">
+            <form action="find">
+                Enter the city:<input type="text" name="name"></input>
+<button type="submit">
+    Submit
+</button>
+                </form></div>
+            
+        </div>
+        
+        
+        
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+       
+        <div class="news" >
+             <div class="su">
+                 <br>
+                 <img src="http://www.metalvideos.net/Updates.gif" alt="Suma" height="50" width="170">
+</div>
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Ms.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.
+                
+                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>
+        </div>
+    
+        <!--div class="news" >
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>
+        </div-->
+
+
+       <script type="text/javascript" src="https://d3js.org/d3.v3.min.js" ></script>
+    <script type="text/javascript">
+
+            {{from gluon.serializers import json}}
+            var suma = {{=XML(json(y))}};
+var sum = {{=XML(json(x))}};
+    </script>
+           
+           
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript">
+            var graph;
+            var xPadding = 20;
+            var yPadding = 30;
+                    var k=sum.length;
+    var values=[];
+    var val1=[];
+            for (var i=0;i<k;i++)
+           {
+               //if (sum[i]!='undefined')
+                  //  value.push({ X:"c"},{Y:suma[i]});
+               
+                    values[i]=suma[i];
+                   val1[i]=sum[i];
+                    //document.write(sum[i]);
+               
+         }
+         //   var data={values:value};
+
+            // Returns the max Y value in our data list
+            function getMaxY() {
+                var max = 0;
+                
+                for(var i = 0; i < values.length; i ++) {
+                    if(values[i] > max) {
+                        max = values[i];
+                    }
+                }
+                
+                max += 10 - max % 10;
+                return max;
+            }
+            
+            // Return the x pixel for a graph point
+            function getXPixel(val) {
+                return ((graph.width() - xPadding) / values.length) * val + (xPadding * 1.5);
+            }
+            
+            // Return the y pixel for a graph point
+            function getYPixel(val) {
+                return graph.height() - (((graph.height() - yPadding) / getMaxY()) * val) - yPadding;
+            }
+
+            $(document).ready(function() {
+                graph = $('#graph');
+                var c = graph[0].getContext('2d');            
+                
+                c.lineWidth = 2;
+                c.strokeStyle = '#333';
+                c.font = 'italic 8pt sans-serif';
+                c.textAlign = "center";
+                
+                // Draw the axises
+                c.beginPath();
+                c.moveTo(xPadding, 0);
+                c.lineTo(xPadding, graph.height() - yPadding);
+                c.lineTo(graph.width(), graph.height() - yPadding);
+                c.stroke();
+                
+                // Draw the X value texts
+                for(var i = 0; i < values.length; i ++) {
+                    c.fillText(val1[i], getXPixel(i), graph.height() - yPadding + 20);
+                }
+                
+                // Draw the Y value texts
+                c.textAlign = "right"
+                c.textBaseline = "middle";
+                
+                for(var i = 0; i < getMaxY(); i += 10) {
+                    c.fillText(i, xPadding - 10, getYPixel(i));
+                }
+                
+                c.strokeStyle = '#f00';
+                
+                // Draw the line graph
+                c.beginPath();
+                c.moveTo(getXPixel(0), getYPixel(values[0]));
+                for(var i = 1; i < values.length; i ++) {
+                    c.lineTo(getXPixel(i), getYPixel(values[i]));
+                }
+                c.stroke();
+                
+                // Draw the dots
+                c.fillStyle = '#333';
+                
+                for(var i = 0; i < values.length; i ++) {  
+                    c.beginPath();
+                    c.arc(getXPixel(i), getYPixel(values[i]), 4, 0, Math.PI * 2, true);
+                    c.fill();
+                }
+            });
+           /* for (var j=0;j<4;j++){
+                {{=x[2]}};
+                {{=y[2]}};
+                
+            }*/
+            
+        </script>
+
+        
+   <div class="foot">
+            <font color="white" size="4">
+                Copyrights@123
+            </font>
+        </div>
+     
+
+
+    </body>
+</html>

@@ -1,0 +1,385 @@
+(dp1
+S'output'
+p2
+S'missing "pass" in view'
+p3
+sS'layer'
+p4
+S'ParserContainer'
+p5
+sS'code'
+p6
+S'response.write(\'<html>\\r\\n    <meta name="viewport" content="width=device-width, initial-scale=1">\\r\\n    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">\\r\\n    <style>\\r\\n        div.a{\\r\\n             height:100px;\\r\\n        }\\r\\n       \\r\\n         div.find{\\r\\n            height:160px;\\r\\n            width:270px;\\r\\n            background:#ff5050;\\r\\n            font-family:"Comic Sans MS", cursive, sans-serif;\\r\\n            font-size:17px;\\r\\n        }\\r\\n        .imgWrap {\\r\\n  position: relative;\\r\\n\\r\\n}\\r\\n        #demo\\r\\n        {\\r\\n            color:white;\\r\\n        }\\r\\n\\r\\n.imgDescription {\\r\\n  position: absolute;\\r\\n  top: 0;\\r\\n  bottom: 0;\\r\\n  left: 0;\\r\\n  right: 0;\\r\\n  <!--background: rgba(29, 106, 154, 0.72);-->\\r\\n    background:#0033cc;\\r\\n color: white;\\r\\n\\r\\n\\r\\n  visibility: hidden;\\r\\n  opacity: 0;\\r\\n\\r\\n  /*remove comment if you want a gradual transition between states\\r\\n  -webkit-transition: visibility opacity 0.2s;\\r\\n  */\\r\\n}\\r\\n\\r\\n\\r\\n.imgWrap:hover .imgDescription {\\r\\n  visibility: visible;\\r\\n  opacity: 1;\\r\\n}\\r\\n        .w3-theme{\\r\\n            background-color:orange;\\r\\n        }\\r\\n        div.roll{\\r\\n            background-color: yellow;\\r\\n            font-size:15px;\\r\\n            color:red;\\r\\n        }\\r\\n        div.assg {\\r\\n            background-color: black;\\r\\n            color: white;\\r\\n            margin: 0px 0 0 0;\\r\\n            padding: 0px;\\r\\n        }\\r\\n        div.assd {\\r\\n            background-color: black;\\r\\n            float : left;\\r\\n            color: white;\\r\\n            margin: 0px 0 10px 0;\\r\\n            padding: 0px;\\r\\n            width: 140px;\\r\\n            height: 360px;\\r\\n        }\\r\\n        div.new {\\r\\n            margin: 0px 0 0px 0;\\r\\n            float : left;\\r\\n            <!--text-align:center;-->\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 0px;\\r\\n            width: 270px;\\r\\n            height: 650px;\\r\\n            background-color:#9999ff;\\r\\n        }\\r\\n        div.su{\\r\\n         height:80px;   \\r\\n        }\\r\\n        div.news {\\r\\n            margin: 0px 0 0px 0;\\r\\n            float : right;\\r\\n            text-align:center;\\r\\n            font-size:15px;\\r\\n            color:black;\\r\\n            margin:0 0 0 10px;\\r\\n            width: 270px;\\r\\n            height: 670px;\\r\\n        }\\r\\n        div.foot{\\r\\n            background-color:black;\\r\\n            text-align:center;\\r\\n            margin: 650px 0 0 0;\\r\\n        }\\r\\n        div.l{\\r\\n            float:right;\\r\\n        }\\r\\n        #head{\\r\\n            position: relative;\\r\\n            background-color:#73e600;\\r\\n            color:#800000;\\r\\n            margin: 0 0 0 0;\\r\\n            padding: 18px;\\r\\n          text-align:center;\\r\\n            font-size:30px;\\r\\n            font-style:italic;\\r\\n            text-shadow:1px 1px 4px black;\\r\\n        }\\r\\n        #head img\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n          left: 15px;\\r\\n        }\\r\\n         #head img2\\r\\n        {\\r\\n            position: absolute;\\r\\n            top: 5px;\\r\\n          right: 15px;\\r\\n        }\\r\\n        \\r\\n        div.img1{\\r\\n             top: 5px;\\r\\n          left: 5px;\\r\\n            padding-left: 2cm;\\r\\n        }\\r\\n        div.img2{\\r\\n             top: 20px;\\r\\n          right:5px;\\r\\n            padding-left: 75%;\\r\\n        }\\r\\n        a:link {\\r\\n            color: green;\\r\\n            background-color: transparent;\\r\\n            text-decoration: none;\\r\\n        }\\r\\n        a:hover {\\r\\n            color: red;\\r\\n            background-color: transparent;\\r\\n            text-decoration: none;\\r\\n        }\\r\\n.dropbtn {\\r\\n    background-color: black;\\r\\n    color: white;\\r\\n    padding: 6px;\\r\\n    font-size: 14px;\\r\\n    border: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.dropdown {\\r\\n    position: relative;\\r\\n    display: inline-block;\\r\\n}\\r\\n\\r\\n.dropdown-content {\\r\\n    display: none;\\r\\n    position: absolute;\\r\\n    background-color: #f9f9f9;\\r\\n    min-width: 85px;\\r\\n     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);\\r\\n}\\r\\n\\r\\n.dropdown-content a {\\r\\n    color: black;\\r\\n    padding: 6px 8px;\\r\\n    text-decoration: none;\\r\\n    display: block;\\r\\n}\\r\\n\\r\\n.dropdown-content a:hover {background-color: pink;}\\r\\n\\r\\n.dropdown:hover .dropdown-content {\\r\\n    display: block;\\r\\n}\\r\\n\\r\\n.dropdown:hover .dropbtn {\\r\\n    background-color: grey;\\r\\n}\\r\\n         .sidenav {\\r\\n    height: 100%;\\r\\n    width: 0;\\r\\n    position: fixed;\\r\\n    z-index: 1;\\r\\n    top: 0;\\r\\n    left: 0;\\r\\n    background-color: black;\\r\\n    overflow-x: hidden;\\r\\n    transition: 0.5s;\\r\\n    padding-top: 60px;\\r\\n    <!--text-align:center;-->\\r\\n}\\r\\n\\r\\n.sidenav a {\\r\\n    padding: 8px 8px 8px 32px;\\r\\n    text-decoration: none;\\r\\n    font-size: 25px;\\r\\n    color: red;\\r\\n    display: block;\\r\\n    transition: 0.3s\\r\\n\\r\\n}\\r\\n\\r\\n.sidenav a:hover{\\r\\n    color:red;\\r\\n}\\r\\n\\r\\n.sidenav .closebtn {\\r\\n    position: absolute;\\r\\n    top: 0;\\r\\n    right: 25px;\\r\\n    font-size: 36px;\\r\\n    margin-left: 50px;\\r\\n}\\r\\n\\r\\n#main {\\r\\n    transition: margin-left .5s;\\r\\n    padding: 16px;\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n@media screen and (max-height: 450px) {\\r\\n  .sidenav {padding-top: 15px;}\\r\\n  .sidenav a {font-size: 18px;}\\r\\n}\\r\\n\\r\\n        .modal {\\r\\n    display: none; /* Hidden by default */\\r\\n    position: fixed; /* Stay in place */\\r\\n    z-index: 1; /* Sit on top */\\r\\n    padding-top: 100px; /* Location of the box */\\r\\n    left: 0;\\r\\n    top: 0;\\r\\n    width: 100%; /* Full width */\\r\\n    height: 100%; /* Full height */\\r\\n    overflow: auto; /* Enable scroll if needed */\\r\\n    background-color: rgb(0,0,0); /* Fallback color */\\r\\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\\r\\n}\\r\\n\\r\\n/* Modal Content */\\r\\n.modal-content {\\r\\n    position: relative;\\r\\n    background-color: pink;\\r\\n    margin: auto;\\r\\n    padding: 0;\\r\\n    border: 1px solid #888;\\r\\n    width: 80%;\\r\\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\\r\\n    -webkit-animation-name: animatetop;\\r\\n    -webkit-animation-duration: 0.4s;\\r\\n    animation-name: animatetop;\\r\\n    animation-duration: 0.4s\\r\\n}\\r\\n\\r\\n/* Add Animation */\\r\\n@-webkit-keyframes animatetop {\\r\\n    from {top:-300px; opacity:0}\\r\\n    to {top:0; opacity:1}\\r\\n}\\r\\n\\r\\n@keyframes animatetop {\\r\\n    from {top:-300px; opacity:0}\\r\\n    to {top:0; opacity:1}\\r\\n}\\r\\n\\r\\n/* The Close Button */\\r\\n.close {\\r\\n    color: white;\\r\\n    float: right;\\r\\n    font-size: 28px;\\r\\n    font-weight: bold;\\r\\n}\\r\\n\\r\\n.close:hover,\\r\\n.close:focus {\\r\\n    color: #000;\\r\\n    text-decoration: none;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.modal-header {\\r\\n    padding: 2px 16px;\\r\\n    background-color: #9933ff;\\r\\n    color: white;\\r\\n}\\r\\n\\r\\n.modal-body {\\r\\n    padding: 2px 16px;\\r\\n    background-color:#ffcc99;\\r\\n    color:black;\\r\\n}\\r\\n\\r\\n.modal-footer {\\r\\n    padding: 2px 16px;\\r\\n    background-color: #5cb85c;\\r\\n    color: white;\\r\\n}\\r\\n\\r\\n.mybtn{\\r\\n    background-color:black;\\r\\n    color:pink;\\r\\n}\\r\\n\\r\\n        /////////////\\r\\n\\r\\n    </style>\\r\\n    <body class="w3-theme">\\r\\n        <div class="assg">\\r\\n            <div id="head">\\r\\n                \\r\\n                   \\r\\n               <a href="http://127.0.0.1:8000/Aditya/default/index?">\\r\\n                <img  src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" width="75" height="60"></a>\\r\\n                       \\r\\n\\r\\n               Weather Station\\r\\n                                  <!--img class="img2" src="http://www.clipartpal.com/_thumbs/pd/weather/weather_vane.png" alt="Adi"  width="75" height="60"-->\\r\\n\\r\\n            </div>\\r\\n            <table>\\r\\n                <tr>\\r\\n                    <td>&nbsp</td>\\r\\n                </tr>\\r\\n                <tr>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover">\\r\\n                            <form action="index">\\r\\n                                <button class="w3-btn w3-black">Home &nbsp&nbsp<img src="http://findicons.com/files/icons/1261/sticker_system/128/home.png" height="30" width="30"></button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="temperature" >\\r\\n                                <button class="w3-btn w3-black">Temperature</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="pressure" >\\r\\n                                <button class="w3-btn w3-black">Pressure</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td width="500">\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="humidity" >\\r\\n                                <button class="w3-btn w3-black">Humidity</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td width="550">\\r\\n                         <button class="w3-btn w3-black">\\r\\n                        <script type="text/javascript">\\r\\ntday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");\\r\\ntmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");\\r\\n\\r\\nfunction GetClock(){\\r\\nvar d=new Date();\\r\\nvar nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();\\r\\nif(nyear<1000) nyear+=1900;\\r\\nvar nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;\\r\\n\\r\\nif(nhour==0){ap=" AM";nhour=12;}\\r\\nelse if(nhour<12){ap=" AM";}\\r\\nelse if(nhour==12){ap=" PM";}\\r\\nelse if(nhour>12){ap=" PM";nhour-=12;}\\r\\n\\r\\nif(nmin<=9) nmin="0"+nmin;\\r\\nif(nsec<=9) nsec="0"+nsec;\\r\\n\\r\\ndocument.getElementById(\\\'clockbox\\\').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";\\r\\n}\\r\\n\\r\\nwindow.onload=function(){\\r\\nGetClock();\\r\\nsetInterval(GetClock,1000);\\r\\n}\\r\\n</script>\\r\\n<div id="clockbox"></div>\\r\\n</button>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                         <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="contactus" >\\r\\n                                <button class="w3-btn w3-black">Contact&nbsp Us</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                     <td>\\r\\n                         <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="aboutus" >\\r\\n                                <button class="w3-btn w3-black">About&nbsp Us</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    <td>\\r\\n                        <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="signup args=" "" >\\r\\n                                <button class="w3-btn w3-black">SignUp</button>\\r\\n                            </form>\\r\\n                        </div>\\r\\n                    </td>\\r\\n                    \\r\\n                    <td width="5%">\\r\\n                        <div class="imgWrap">\\r\\n  <!--a href="http://www.facebook.com" target="_blank"-->\\r\\n                              <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="http://www.facebook.com" >\\r\\n                                <button class="w3-btn w3-black">\\r\\n                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30"></button>\\r\\n                                </form>\\r\\n                        </div>\\r\\n                        </a>\\r\\n  <p class="imgDescription">Join us on Facebook</p>\\r\\n</div>\\r\\n                    </td>\\r\\n                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>\\r\\n                    <td width="5%">\\r\\n                         <div class="imgWrap">\\r\\n  <!--a href="http://www.twitter.com" target="_blank"-->\\r\\n                              <div class="w3-dropdown-hover" align="right">\\r\\n                            <form action="http://www.twitter.com" >\\r\\n                                <button class="w3-btn w3-black">\\r\\n                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">\\r\\n                            </button>\\r\\n                                </form>\\r\\n                        </div>\\r\\n\\r\\n                        </a>\\r\\n                             <p class="imgDescription">Follow us on Twitter</p>\\r\\n</div>\\r\\n                        \\r\\n                    </td>\\r\\n                    \\r\\n                </tr>\\r\\n            </table>\\r\\n        </div>\\r\\n <div class="roll">\\r\\n            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">\\r\\n                <i>Place &nbsp : &nbsp Max &nbsp/ &nbsp Min Temp&nbsp,&nbsp&nbsp</i></font>\\r\\n                \', escape=False)\nfor i in read:\n    response.write(\'\\r\\n                <font color="blue">\', escape=False)\n    response.write(i.place)\n    response.write(\'</font>&nbsp :\\r\\n                <font color="green">\', escape=False)\n    response.write(i.high_temparature)\n    response.write(\'&nbsp / </font>\\r\\n                <font color="black">\', escape=False)\n    response.write(i.low_temparature)\n    response.write(\'&nbsp,&nbsp</font>\\r\\n                 \', escape=False)\n    pass\nresponse.write(\'\\r\\n                \\r\\n            </marquee>\\r\\n        </div>\\r\\n        <!--div class="assd">\\r\\n            <tr>\\r\\n                <form action="temperature">\\r\\n                    <button class="w3-btn w3-black">Temprature</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="pressure">\\r\\n                    <button class="w3-btn w3-black">Pressure</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Humidity</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Rainfall</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Others</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">Contact Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n            <tr>\\r\\n                <form action="index">\\r\\n                    <button class="w3-btn w3-black">About Us</button>\\r\\n                </form>\\r\\n            </tr>\\r\\n        </div-->\\r\\n        <div class="new">\\r\\n<tr>\\r\\n<div id="mySidenav" class="sidenav">\\r\\n\\r\\n  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\\r\\n  <center>\\r\\n  <button id="myBtn" class="mybtn">Chennai</button><br><br><br><br>\\r\\n  <button id="myBtn_1" class="mybtn">Vijayawada</button><br><br><br><br>\\r\\n  <button id="myBtn_2" class="mybtn">Amalapuram</button><br><br><br><br>\\r\\n  <button id="myBtn_3" class="mybtn">Guntur</button><br><br><br><br>\\r\\n  <button id="myBtn_4" class="mybtn">Vishakhaptnam</button>\\r\\n  </center>\\r\\n</div>\\r\\n\\r\\n\\r\\n<!--span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Places</span-->\\r\\n\\r\\n\\r\\n<div id="main">\\r\\n  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#x2630; Places</span>\\r\\n</div>\\r\\n\\r\\n\\r\\n<script>\\r\\nfunction openNav() {\\r\\n    document.getElementById("mySidenav").style.width = "285px";\\r\\n   // document.getElementById("main").style.marginLeft = "150px";\\r\\n}\\r\\n\\r\\nfunction closeNav() {\\r\\n    document.getElementById("mySidenav").style.width = "0";\\r\\n    //document.getElementById("main").style.marginLeft= "0";\\r\\n}\\r\\n</script>\\r\\n\\r\\n\\r\\n<div id="myModal" class="modal">\\r\\n\\r\\n  <!-- Modal content -->\\r\\n  <div class="modal-content">\\r\\n    <div class="modal-header">\\r\\n      <span class="close">\\xc3\\x97</span>\\r\\n      <h2>Weather Report</h2>\\r\\n    </div>\\r\\n    <div class="modal-body" >\\r\\n      <p>Temperature: 29.6\\xc2\\xb0C</p>\\r\\n      <p>Pressure: 1219 hPa</p>\\r\\n         <p>Humidity: 40%</p>\\r\\n    </div>\\r\\n  </div>\\r\\n    \\r\\n    \\r\\n    \\r\\n    \\r\\n    \\r\\n\\r\\n</div>\\r\\n<script>\\r\\n// Get the modal\\r\\nvar modal = document.getElementById(\\\'myModal\\\');\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_1");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_2");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_3");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n// Get the button that opens the modal\\r\\nvar btn = document.getElementById("myBtn_4");\\r\\n\\r\\n// Get the <span> element that closes the modal\\r\\nvar span = document.getElementsByClassName("close")[0];\\r\\n`\\r\\n// When the user clicks the button, open the modal\\r\\nbtn.onclick = function() {\\r\\n    modal.style.display = "block";\\r\\n}\\r\\n\\r\\n// When the user clicks on <span> (x), close the modal\\r\\nspan.onclick = function() {\\r\\n    modal.style.display = "none";\\r\\n}\\r\\n\\r\\n// When the user clicks anywhere outside of the modal, close it\\r\\nwindow.onclick = function(event) {\\r\\n    if (event.target == modal) {\\r\\n        modal.style.display = "none";\\r\\n    }\\r\\n}\\r\\n</script>\\r\\n            </tr>\\r\\n            \\r\\n            \\r\\n            <font color="black" >\\r\\n                \\r\\n                <a href="imd_sensors" >  &nbsp&nbsp&nbsp&#9776;IMD SENSORS</a><br><br>\\r\\n                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>\\r\\n                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>\\r\\n                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp&#9776; IIIT CHITTOR</a><br>\\r\\n                </br></font>\\r\\n            \\r\\n            \\r\\n            \\r\\n           <br><br><br><br>\\r\\n            <div class="find"><center><br>\\r\\n            <form action="find">\\r\\n                Enter the city:<input type="text" name="name"></input>\\r\\n                <br><br>\\r\\n<button type="submit">\\r\\n    Submit\\r\\n</button>\\r\\n                </form></center></div>\\r\\n            \\r\\n        </div>\\r\\n        \\r\\n        \\r\\n      \\r\\n       \\r\\n        <div class="news" >\\r\\n             <div class="su">\\r\\n                 <br>\\r\\n                 <img src="http://www.metalvideos.net/Updates.gif" alt="Suma" height="50" width="170">\\r\\n</div>\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Ms.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.\\r\\n                \\r\\n                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>\\r\\n        </div>\\r\\n    \\r\\n        <!--div class="news" >\\r\\n            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>\\r\\n        </div-->\\r\\n\\r\\n<center>\\r\\n    <br>\\r\\n        <div class ="l" id="line_top_x" style="width:66%;height:650px">\\r\\n            \\r\\n            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>\\r\\n    <script type="text/javascript">\\r\\n      google.charts.load(\\\'current\\\', {\\\'packages\\\':[\\\'line\\\']});\\r\\n      google.charts.setOnLoadCallback(drawChart);\\r\\n\\r\\n    function drawChart() {\\r\\n\\r\\n      var data = new google.visualization.DataTable();\\r\\n      data.addColumn(\\\'string\\\', \\\'Date\\\');\\r\\n      data.addColumn(\\\'number\\\', \\\'Temperature\\\');\\r\\n      data.addColumn(\\\'number\\\', \\\'Pressure\\\');\\r\\n      data.addColumn(\\\'number\\\', \\\'Humidity\\\');\\r\\n       \\r\\n        \', escape=False)\ncnt=1\nresponse.write(\'\\r\\n        \', escape=False)\nfor i in rows:\n    response.write(\'\\r\\n            \', escape=False)\n    if cnt==1:\n        response.write(\'\\r\\n                \', escape=False)\n        t1=i.temperature\n        response.write(\'\\r\\n                \', escape=False)\n        p1=i.pressure\n        response.write(\'\\r\\n                \', escape=False)\n        h1=i.humidity\n        response.write(\'\\r\\n            \', escape=False)\n        if cnt==2:\n            response.write(\'\\r\\n                \', escape=False)\n            t2=i.temperature\n            response.write(\'\\r\\n                \', escape=False)\n            p2=i.pressure\n            response.write(\'\\r\\n                \', escape=False)\n            h2=i.humidity\n            response.write(\'\\r\\n            \', escape=False)\n            if cnt==3:\n                response.write(\'\\r\\n                \', escape=False)\n                t3=i.temperature\n                response.write(\'\\r\\n                \', escape=False)\n                p3=i.pressure\n                response.write(\'\\r\\n                \', escape=False)\n                h3=i.humidity\n                response.write(\'\\r\\n            \', escape=False)\n                if cnt==4:\n                    response.write(\'\\r\\n                \', escape=False)\n                    t4=i.temperature\n                    response.write(\'\\r\\n                \', escape=False)\n                    p4=i.pressure\n                    response.write(\'\\r\\n                \', escape=False)\n                    h4=i.humidity\n                    response.write(\'\\r\\n            \', escape=False)\n                    cnt=cnt+1\n                    response.write(\'\\r\\n        \', escape=False)\n                    pass\n                response.write("\\r\\n      data.addRows([\\r\\n        [\'28/10/16\',  t1, p1, h1],\\r\\n        [\'29/10/16\',  30.9, 69.5, 32.4],\\r\\n        [\'30/10/16\',  25.4,   57, 25.7],\\r\\n        [\'31/10/16\',  11.7, 18.8, 10.5],\\r\\n          \\r\\n       \\r\\n      ]);\\r\\n\\r\\n      var options = {\\r\\n        chart: {\\r\\n          title: \'Temperature,Pressure & Humidity of Chennai\'\\r\\n          \\r\\n        },\\r\\n        width: 600,\\r\\n        height: 500,\\r\\n        axes: {\\r\\n          x: {\\r\\n            0: {side: \'top\'}\\r\\n          }\\r\\n        }\\r\\n      };\\r\\n\\r\\n      var chart = new google.charts.Line(document.getElementById(\'line_top_x\'));\\r\\n\\r\\n      chart.draw(data, options);\\r\\n    }\\r\\n  </script>\\r\\n            ", escape=False)\n                response.write(r)\n                response.write(\'\\r\\n        </div>\\r\\n    </center>\\r\\n   <div class="foot">\\r\\n            <font color="white" size="4">\\r\\n                Copyrights@123\\r\\n            </font>\\r\\n        </div>\\r\\n     \\r\\n      </body>\\r\\n</html>\\r\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'gluon.rocket'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of SocketTimeout object>"
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of SocketTimeout object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of SocketTimeout object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of SocketTimeout object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'__init__'
+p26
+S"<method-wrapper '__init__' of SocketTimeout object>"
+p27
+sS'__setattr__'
+p28
+S"<method-wrapper '__setattr__' of SocketTimeout object>"
+p29
+sS'__reduce_ex__'
+p30
+S'<built-in method __reduce_ex__ of SocketTimeout object>'
+p31
+sS'__new__'
+p32
+S'<built-in method __new__ of type object>'
+p33
+sS'__format__'
+p34
+S'<built-in method __format__ of SocketTimeout object>'
+p35
+sS'__class__'
+p36
+S"<class 'gluon.rocket.SocketTimeout'>"
+p37
+sS'__doc__'
+p38
+S"'Exception for when a socket times out between requests.'"
+p39
+sS'__getitem__'
+p40
+S"<method-wrapper '__getitem__' of SocketTimeout object>"
+p41
+sS'__setstate__'
+p42
+S'<built-in method __setstate__ of SocketTimeout object>'
+p43
+sS'__getattribute__'
+p44
+S"<method-wrapper '__getattribute__' of SocketTimeout object>"
+p45
+sS'args'
+p46
+S"('Socket timed out before request.',)"
+p47
+sS'__subclasshook__'
+p48
+S'<built-in method __subclasshook__ of type object>'
+p49
+sS'__unicode__'
+p50
+S'<built-in method __unicode__ of SocketTimeout object>'
+p51
+sS'__delattr__'
+p52
+S"<method-wrapper '__delattr__' of SocketTimeout object>"
+p53
+sS'__repr__'
+p54
+S"<method-wrapper '__repr__' of SocketTimeout object>"
+p55
+sS'__hash__'
+p56
+S"<method-wrapper '__hash__' of SocketTimeout object>"
+p57
+ssS'evalue'
+p58
+S'Socket timed out before request.'
+p59
+sS'frames'
+p60
+(lp61
+(dp62
+S'file'
+p63
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py'
+p64
+sS'dump'
+p65
+(dp66
+S'self'
+p67
+S'<WSGIWorker(Thread-4, started daemon 9276)>'
+p68
+sS'conn'
+p69
+S'<gluon.rocket.Connection object>'
+p70
+sS'self.run_app'
+p71
+S'<bound method WSGIWorker.run_app of <WSGIWorker(Thread-4, started daemon 9276)>>'
+p72
+ssS'lnum'
+p73
+I1337
+sS'lines'
+p74
+(dp75
+I1332
+S'            # Enter connection serve loop'
+p76
+sI1333
+S'            while True:'
+p77
+sI1334
+S'                if __debug__:'
+p78
+sI1335
+S"                    self.err_log.debug('Serving a request')"
+p79
+sI1336
+S'                try:'
+p80
+sI1337
+S'                    self.run_app(conn)'
+p81
+sI1338
+S'                except:'
+p82
+sI1339
+S'                    exc = sys.exc_info()'
+p83
+sI1340
+S'                    handled = self._handleError(*exc)'
+p84
+sI1341
+S'                    if handled:'
+p85
+ssS'call'
+p86
+S'(self=<WSGIWorker(Thread-4, started daemon 9276)>)'
+p87
+sS'func'
+p88
+S'run'
+p89
+sa(dp90
+g63
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py'
+p91
+sg65
+(dp92
+S'self'
+p93
+S'<WSGIWorker(Thread-4, started daemon 9276)>'
+p94
+sS'self.environ'
+p95
+S"{'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'HTTP_ACCEPT_ENCODING': 'gzip,deflate,sdch', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.8', 'HTTP_CACHE_CONTROL': 'max-age=0', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'session_id_weatherstation=127.0.0.1-bc08164b-125...ya=127.0.0.1-da928877-868a-4b54-8325-1c4fcf4bb905', 'HTTP_HOST': '127.0.0.1:8000', 'HTTP_REFERER': 'http://127.0.0.1:8000/admin/default/edit/Aditya/controllers/default.py?id=controllers__default__py', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/...TML, like Gecko) Chrome/31.0.1622.7 Safari/537.36', 'PATH_INFO': '/Aditya/default/find', ...}"
+p96
+sS'sock_file'
+p97
+S'<socket._fileobject object>'
+p98
+sS'environ'
+p99
+S'undefined'
+p100
+sS'self.build_environ'
+p101
+S'<bound method WSGIWorker.build_environ of <WSGIWorker(Thread-4, started daemon 9276)>>'
+p102
+sS'conn'
+p103
+S'<gluon.rocket.Connection object>'
+p104
+ssg73
+I1830
+sg74
+(dp105
+I1825
+S'        else:'
+p106
+sI1826
+S'            sock_file = conn.makefile(BUF_SIZE)'
+p107
+sI1827
+S''
+sI1828
+S'        try:'
+p108
+sI1829
+S'            # Read the headers and build our WSGI environment'
+p109
+sI1830
+S'            self.environ = environ = self.build_environ(sock_file, conn)'
+p110
+sI1831
+S''
+sI1832
+S'            # Handle 100 Continue'
+p111
+sI1833
+S"            if environ.get('HTTP_EXPECT', '') == '100-continue':"
+p112
+sI1834
+S"                res = environ['SERVER_PROTOCOL'] + ' 100 Continue\\r\\n\\r\\n'"
+p113
+ssg86
+S'(self=<WSGIWorker(Thread-4, started daemon 9276)>, conn=<gluon.rocket.Connection object>)'
+p114
+sg88
+S'run_app'
+p115
+sa(dp116
+g63
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py'
+p117
+sg65
+(dp118
+S'sock_file'
+p119
+S'<socket._fileobject object>'
+p120
+sS'self.read_request_line'
+p121
+S'<bound method WSGIWorker.read_request_line of <WSGIWorker(Thread-4, started daemon 9276)>>'
+p122
+sS'self'
+p123
+S'<WSGIWorker(Thread-4, started daemon 9276)>'
+p124
+sS'request'
+p125
+g100
+ssg73
+I1650
+sg74
+(dp126
+I1645
+S'                                      "wsgiorg.futures": executor.futures})'
+p127
+sI1646
+S''
+sI1647
+S'    def build_environ(self, sock_file, conn):'
+p128
+sI1648
+S'        """ Build the execution environment. """'
+p129
+sI1649
+S'        # Grab the request line'
+p130
+sI1650
+S'        request = self.read_request_line(sock_file)'
+p131
+sI1651
+S''
+sI1652
+S'        # Copy the Base Environment'
+p132
+sI1653
+S'        environ = self.base_environ.copy()'
+p133
+sI1654
+S''
+ssg86
+S'(self=<WSGIWorker(Thread-4, started daemon 9276)>, sock_file=<socket._fileobject object>, conn=<gluon.rocket.Connection object>)'
+p134
+sg88
+S'build_environ'
+p135
+sa(dp136
+g63
+S'C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py'
+p137
+sg65
+(dp138
+S'global SocketTimeout'
+p139
+S"<class 'gluon.rocket.SocketTimeout'>"
+p140
+ssg73
+I1401
+sg74
+(dp141
+I1396
+S''
+sI1397
+S'                d = sock_file.readline()'
+p142
+sI1398
+S'                if PY3K:'
+p143
+sI1399
+S"                    d = d.decode('ISO-8859-1')"
+p144
+sI1400
+S'        except socket.timeout:'
+p145
+sI1401
+S"            raise SocketTimeout('Socket timed out before request.')"
+p146
+sI1402
+S'        except TypeError:'
+p147
+sI1403
+S'            raise SocketClosed('
+p148
+sI1404
+S"                'SSL bug caused closure of socket.  See '"
+p149
+sI1405
+S'                \'"https://groups.google.com/d/topic/web2py/P_Gw0JxWzCs".\')'
+p150
+ssg86
+S'(self=<WSGIWorker(Thread-4, started daemon 9276)>, sock_file=<socket._fileobject object>)'
+p151
+sg88
+S'read_request_line'
+p152
+sasS'pyver'
+p153
+S'Python 2.7.9: C:\\Users\\G. ADITYA\\Desktop\\web2py\\web2py.exe (prefix: )'
+p154
+sS'etype'
+p155
+S"<class 'gluon.rocket.SocketTimeout'>"
+p156
+sS'date'
+p157
+S'Sun Oct 30 18:16:49 2016'
+p158
+sS'locals'
+p159
+(dp160
+S'sock_file'
+p161
+S'<socket._fileobject object>'
+p162
+sS'self'
+p163
+S'<WSGIWorker(Thread-4, started daemon 9276)>'
+p164
+sssS'traceback'
+p165
+S'Traceback (most recent call last):\n  File "C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py", line 1337, in run\n    self.run_app(conn)\n  File "C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py", line 1830, in run_app\n    self.environ = environ = self.build_environ(sock_file, conn)\n  File "C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py", line 1650, in build_environ\n    request = self.read_request_line(sock_file)\n  File "C:\\Users\\G. ADITYA\\Desktop\\web2py\\gluon\\rocket.py", line 1401, in read_request_line\n    raise SocketTimeout(\'Socket timed out before request.\')\nSocketTimeout: Socket timed out before request.\n'
+p166
+s.

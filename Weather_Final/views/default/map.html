@@ -1,0 +1,228 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+          width:75%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var SriCity = {lat: 13.55767, lng: 80.02949};    // -
+         var Vijayawada = {lat: 16.506174, lng:80.648015};// -1
+          var Hyderabad = {lat:17.385044 , lng:78.486671};// -2
+          var Bangalore = {lat: 12.971599, lng:77.594563};// -3
+          var Mysuru = {lat:12.295810 , lng:76.639381};// -4
+          var Goa = {lat:15.299326 , lng:74.123996 };// -5
+           var Kochi = {lat:9.931233 , lng: 76.267304 };// -6
+          var Delhi = {lat:28.7041, lng: 77.1025 };// -7
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: SriCity
+        });
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Vijayawada
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Hyderabad
+        });
+         var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Bangalore
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Mysuru
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Goa
+        });
+           var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Kochi
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Delhi
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 23.34°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+          var contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+          var contentString2 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+          var contentString3 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+         var contentString4 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+           var contentString5 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+           var contentString6 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+           var contentString7 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var infowindow1 = new google.maps.InfoWindow({
+          content: contentString1
+        });
+          var infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+        });
+          var infowindow3 = new google.maps.InfoWindow({
+          content: contentString3
+        });
+          var infowindow4 = new google.maps.InfoWindow({
+          content: contentString4
+        });
+           var infowindow5 = new google.maps.InfoWindow({
+          content: contentString5
+        });
+           var infowindow6 = new google.maps.InfoWindow({
+          content: contentString6
+        });
+           var infowindow7 = new google.maps.InfoWindow({
+          content: contentString7
+        });
+        var marker = new google.maps.Marker({
+          position: SriCity,
+          map: map,
+          title: 'SriCity'
+        });
+          var marker1 = new google.maps.Marker({
+          position: Vijayawada,
+          map: map,
+          title: 'Vijayawada'
+        });
+          var marker2 = new google.maps.Marker({
+          position: Hyderabad,
+          map: map,
+          title: 'Hyderabad'
+        });
+          var marker3 = new google.maps.Marker({
+          position: Bangalore,
+          map: map,
+          title: 'Bangalore'
+        });
+          var marker4 = new google.maps.Marker({
+          position: Mysuru,
+          map: map,
+          title: 'Mysuru'
+        });
+          var marker5 = new google.maps.Marker({
+          position: Goa,
+          map: map,
+          title: 'Goa'
+        });
+           var marker6 = new google.maps.Marker({
+          position: Kochi,
+          map: map,
+          title: 'Kochi'
+        });
+           var marker7 = new google.maps.Marker({
+          position: Delhi,
+          map: map,
+          title: 'Delhi'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+          marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+          marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+          marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+          marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+          marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+           marker6.addListener('click', function() {
+          infowindow6.open(map, marker6);
+        });
+           marker7.addListener('click', function() {
+          infowindow7.open(map, marker7);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFfUYZh9JH4CeOmcvqentnZ5oes1bN7ac&callback=initMap">
+    </script>
+  </body>
+</html>

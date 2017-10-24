@@ -1,0 +1,304 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style>
+        .w3-theme{
+            background-color:orange;
+        }
+        div.roll{
+            background-color: yellow;
+            font-size:15px;
+            color:red;
+        }
+        div.assg {
+            background-color: black;
+            color: white;
+            margin: 0px 0 0 0;
+            padding: 0px;
+        }
+        div.assd {
+            background-color: black;
+            float : left;
+            color: white;
+            margin: 0px 0 10px 0;
+            padding: 0px;
+            width: 140px;
+            height: 360px;
+        }
+        div.new {
+            margin: 0px 0 0px 0;
+            float : left;
+            <!--text-align:center;-->
+            font-size:15px;
+            color:black;
+            margin:0 0 0 0px;
+            width: 270px;
+            height: 650px;
+            background-color:"#9999ff"
+        }
+        div.news {
+            margin: 0px 0 0px 0;
+            float : right;
+            text-align:center;
+            font-size:15px;
+            color:black;
+            margin:0 0 0 10px;
+            width: 270px;
+            height: 810px;
+        }
+        div.foot{
+            background-color:black;
+            text-align:center;
+            margin: 650px 0 0 0;
+        }
+        div.l{
+            float:right;
+        }
+        #head{
+            position: relative;
+            background-color:#73e600;
+            color:#800000;
+            margin: 0 0 0 0;
+            padding: 18px;
+            text-align:center;
+            font-size:25px;
+            font-style:italic;
+            text-shadow:1px 1px 4px black;
+        }
+        #head img
+        {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        #table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        #td {
+            text-align: left;
+            padding: 2px;
+        }
+        #tr:nth-child(even){background-color: #f2f2f2}
+        #th {
+            text-align: left;
+            padding: 2px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+    }
+
+    </style>
+    <body class="w3-theme">
+        <div class="assg">
+            <div id="head">
+                <img src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" align="top-left" width="75" height="60">
+                Weather Station
+            </div>
+            <table>
+                <tr>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="w3-dropdown-hover">
+                            <form action="index">
+                                <button class="w3-btn w3-black">Home</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="temperature" >
+                                <button class="w3-btn w3-black">Temperature</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="pressure" >
+                                <button class="w3-btn w3-black">Pressure</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="humidity" >
+                                <button class="w3-btn w3-black">Humidity</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="830">
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="rainfall" >
+                                <button class="w3-btn w3-black">RainFall</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="signup" >
+                                <button class="w3-btn w3-black">SignUp</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30">
+                        </a>
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">
+                        </a>
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td>
+                        <a href="http://www.gmail.com" target="_blank">
+                            <img src="http://files.technobezz.com/files/uploads/2016/03/original.jpg" alt="gmail" width="30" height="30">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="roll">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">
+                Welcome to Weather Station!!</font>
+            </marquee>
+        </div>
+        <!--div class="assd">
+            <tr>
+                <form action="temperature">
+                    <button class="w3-btn w3-black">Temprature</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="pressure">
+                    <button class="w3-btn w3-black">Pressure</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Humidity</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Rainfall</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Others</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Contact Us</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">About Us</button>
+                </form>
+            </tr>
+        </div-->
+        <div class="new">
+              <font color="black" >
+                
+                <br><br>
+                <a href="imd_sensors" >  &nbsp&nbsp&nbsp IMD SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp IIIT SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp IIIT SENSORS</a><br><br>
+                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp IIIT CHITTOR</a><br>
+                </br></font>
+        </div>
+    
+        <div class="news" >
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Ms.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.
+                
+                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>
+        </div>
+    
+        <!--div class="news" >
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>
+        </div-->
+
+        <center>
+            <br>
+            <br>
+            <br>
+            <br><br>
+        <table id="table">
+        <tr id="tr">
+            <th id="th">Place</th>
+            <th id="th">RainFall</th>
+        </tr>
+        {{ for iterator in reading:}}
+        <tr id="tr">
+            <td id="td">{{=iterator.place}}</td>
+            <td id="td">{{=iterator.today_rain}}</td>
+        </tr>
+        {{pass}}
+        </table>
+        </center>
+
+        <div class="foot">
+            <font color="white" size="4">
+                Copyrights@123
+            </font>
+        </div>
+        <script>
+            function myMap() {
+                
+                var myCenter = new google.maps.LatLng(13.55767,80.02949);//SriCity
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: myCenter, zoom: 5};
+                var map = new google.maps.Map(mapCanvas,mapOptions);
+                var marker = new google.maps.Marker({position: myCenter,animation: google.maps.Animation.BOUNCE});
+                marker.setMap(map);
+
+                var myCenter = new google.maps.LatLng(16.506174,80.648015);//Vijayawada
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(17.385044,78.486671);//Hyderabad
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(12.971599,77.594563);//Bangalore
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(12.295810,76.639381);//Mysuru
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(15.299326,74.123996);//Goa
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(9.931233,76.267304);//Kochi
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                google.maps.event.addListener(marker,'click',function() {
+                map.setZoom(9);
+                map.setCenter(marker.getPosition());
+              });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    </body>
+</html>

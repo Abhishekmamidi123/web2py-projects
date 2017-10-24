@@ -1,0 +1,771 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style>
+        div.at{
+            height:500px;
+            width:550px;
+            background:#ffffcc;
+        }
+        div.find{
+            height:160px;
+            width:270px;
+            background:#ff5050;
+            font-family:"Comic Sans MS", cursive, sans-serif;
+            font-size:17px;
+        }
+        .imgWrap {
+  position: relative;
+
+}
+        #demo
+        {
+            color:white;
+        }
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  <!--background: rgba(29, 106, 154, 0.72);-->
+    background:#0033cc;
+ color: white;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+        .w3-theme{
+            background-color:orange;
+        }
+        div.roll{
+            background-color: yellow;
+            font-size:15px;
+            color:red;
+        }
+        div.assg {
+            background-color: black;
+            color: white;
+            margin: 0px 0 0 0;
+            padding: 0px;
+        }
+        div.assd {
+            background-color: black;
+            float : left;
+            color: white;
+            margin: 0px 0 10px 0;
+            padding: 0px;
+            width: 140px;
+            height: 360px;
+        }
+        div.new {
+            margin: 0px 0 0px 0;
+            float : left;
+            <!--text-align:center;-->
+            font-size:15px;
+            color:black;
+            margin:0 0 0 0px;
+            width: 270px;
+            height: 650px;
+            background-color:#9999ff;
+        }
+        div.su{
+         height:80px;   
+        }
+        div.news {
+            margin: 0px 0 0px 0;
+            float : right;
+            text-align:center;
+            font-size:15px;
+            color:black;
+            margin:0 0 0 10px;
+            width: 270px;
+            height: 670px;
+        }
+        div.foot{
+            background-color:black;
+            text-align:center;
+            margin: 650px 0 0 0;
+        }
+        div.l{
+            float:right;
+        }
+        #head{
+            position: relative;
+            background-color:#73e600;
+            color:#800000;
+            margin: 0 0 0 0;
+            padding: 18px;
+          text-align:center;
+            font-size:30px;
+            font-style:italic;
+            text-shadow:1px 1px 4px black;
+        }
+        #head img
+        {
+            position: absolute;
+            top: 5px;
+          left: 15px;
+        }
+         #head img2
+        {
+            position: absolute;
+            top: 5px;
+          right: 15px;
+        }
+        
+        div.img1{
+             top: 5px;
+          left: 5px;
+            padding-left: 2cm;
+        }
+        div.img2{
+             top: 20px;
+          right:5px;
+            padding-left: 75%;
+        }
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 85px;
+     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+         .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    <!--text-align:center;-->
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color:red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+        .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: pink;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #9933ff;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color:#ffcc99;
+    color:black;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.mybtn{
+    background-color:black;
+    color:pink;
+}
+
+        /////////////
+
+    </style>
+    <body class="w3-theme">
+        <div class="assg">
+            <div id="head">
+                
+                   
+               <a href="http://127.0.0.1:8000/Aditya/default/index?">
+                <img  src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" width="75" height="60"></a>
+                       
+
+               Weather Station
+                                  <!--img class="img2" src="http://www.clipartpal.com/_thumbs/pd/weather/weather_vane.png" alt="Adi"  width="75" height="60"-->
+
+            </div>
+            <table>
+                <tr>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="w3-dropdown-hover">
+                            <form action="index">
+                                <button class="w3-btn w3-black">Home &nbsp&nbsp<img src="http://findicons.com/files/icons/1261/sticker_system/128/home.png" height="30" width="30"></button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="temperature" >
+                                <button class="w3-btn w3-black">Temperature</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="pressure" >
+                                <button class="w3-btn w3-black">Pressure</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="500">
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="humidity" >
+                                <button class="w3-btn w3-black">Humidity</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="550">
+                         <button class="w3-btn w3-black">
+                        <script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+</button>
+                    </td>
+                    <td>
+                         <div class="w3-dropdown-hover" align="right">
+                            <form action="contactus" >
+                                <button class="w3-btn w3-black">Contact&nbsp Us</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                         <div class="w3-dropdown-hover" align="right">
+                            <form action="aboutus" >
+                                <button class="w3-btn w3-black">About&nbsp Us</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="signup" >
+                                <button class="w3-btn w3-black">SignUp</button>
+                            </form>
+                        </div>
+                    </td>
+                    
+                    <td width="5%">
+                        <div class="imgWrap">
+  <!--a href="http://www.facebook.com" target="_blank"-->
+                              <div class="w3-dropdown-hover" align="right">
+                            <form action="http://www.facebook.com" >
+                                <button class="w3-btn w3-black">
+                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30"></button>
+                                </form>
+                        </div>
+                        </a>
+  <p class="imgDescription">Join us on Facebook</p>
+</div>
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td width="5%">
+                         <div class="imgWrap">
+  <!--a href="http://www.twitter.com" target="_blank"-->
+                              <div class="w3-dropdown-hover" align="right">
+                            <form action="http://www.twitter.com" >
+                                <button class="w3-btn w3-black">
+                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">
+                            </button>
+                                </form>
+                        </div>
+
+                        </a>
+                             <p class="imgDescription">Follow us on Twitter</p>
+</div>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+       <div class="roll">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">
+                <i>Place &nbsp : &nbsp Max &nbsp/ &nbsp Min Temp&nbsp,&nbsp&nbsp</i></font>
+                {{ for i in read:}}
+                <font color="blue">{{=i.place}}</font>&nbsp :
+                <font color="green">{{=i.high_temparature}}&nbsp / </font>
+                <font color="black">{{=i.low_temparature}}&nbsp,&nbsp</font>
+                 {{pass}}
+                
+            </marquee>
+        </div>
+        <!--div class="assd">
+            <tr>
+                <form action="temperature">
+                    <button class="w3-btn w3-black">Temprature</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="pressure">
+                    <button class="w3-btn w3-black">Pressure</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Humidity</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Rainfall</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Others</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Contact Us</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">About Us</button>
+                </form>
+            </tr>
+        </div-->
+        <div class="new">
+<tr>
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <center>
+  <button id="myBtn" class="mybtn">Chennai</button><br><br><br><br>
+  <button id="myBtn_1" class="mybtn">Vijayawada</button><br><br><br><br>
+  <button id="myBtn_2" class="mybtn">Amalapuram</button><br><br><br><br>
+  <button id="myBtn_3" class="mybtn">Guntur</button><br><br><br><br>
+  <button id="myBtn_4" class="mybtn">Vishakhaptnam</button>
+  </center>
+</div>
+
+
+<!--span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Places</span-->
+
+
+<div id="main">
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#x2630; Places</span>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "285px";
+   // document.getElementById("main").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    //document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Weather Report</h2>
+    </div>
+    <div class="modal-body" >
+      <p>Temperature: 29.6°C</p>
+      <p>Pressure: 1219 hPa</p>
+         <p>Humidity: 40%</p>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            </tr>
+            
+            
+            <font color="black" >
+                
+                <a href="imd_sensors" >  &nbsp&nbsp&nbsp&#9776;IMD SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>
+                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp&#9776; IIIT CHITTOR</a><br>
+                </br></font>
+            
+            
+            
+             <br><br><br><br>
+            <div class="find"><center><br>
+            <form action="find">
+                Enter the city:<input type="text" name="name"></input>
+                <br><br>
+<button type="submit">
+    Submit
+</button>
+                </form></center></div>
+            
+        </div>
+        
+        
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+       
+        <div class="news" >
+             <div class="su">
+                 <br>
+                 <img src="http://www.metalvideos.net/Updates.gif" alt="Suma" height="50" width="170">
+</div>
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Ms.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.
+                
+                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>
+        </div>
+    
+        <!--div class="news" >
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>
+        </div-->
+
+        <div class ="l"  style="width:66%;height:650px"><center>
+            <br><h1>
+            
+            Sign UP</h1><br>
+            <div class="at">
+                
+               <form method="post" action="signup1.html">
+        <br><br>
+      <label for="fname" class="ui-hidden-accessible">First name&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :&nbsp</label>
+      <input type="text" name="fname"value="" required id="fname" placeholder="First name..."><br><br><br>
+                   
+                   
+              <label for="phno" class="ui-hidden-accessible">   Phone Number: &nbsp </label>
+         <input type="tel" name="phno" value="" required pattern='\d{10}'  title='Phone Number (Format: 1234567890)' id="fname" placeholder="Enter 10 digitnumber"><br><br><br>
+                   
+                   
+              <label for="email" class="ui-hidden-accessible">   Email Id&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :&nbsp
+</label>
+         <input type="email" name="email" value="" required pattern='([\w-\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})' id="fname" placeholder="email@gmail.com"><br><br><br>
+        
+                   
+                   
+              <label for="passwd" class="ui-hidden-accessible">Password&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :&nbsp
+</label>
+         <input type="password" name="passwd" value="" required pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}' title='Password (Format: at least one number, one lowercase and one uppercase letter at least six characters)' id="fname"   placeholder="Atleast 6 characters"><br><br><br>
+
+<button type="submit" name="submit">Submit</button>
+
+    </form>
+                <br>
+                   <h3>
+                       
+                {{=s}} </h3>
+                
+  </center>
+
+            </div>
+
+        </div>
+   <div class="foot">
+            <font color="white" size="4">
+                Copyrights@123
+            </font>
+        </div>
+     
+    </body>
+</html>

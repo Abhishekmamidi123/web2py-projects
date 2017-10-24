@@ -1,0 +1,1005 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <style>
+        div.find{
+            height:160px;
+            width:270px;
+            background:#ff5050;
+            font-family:"Comic Sans MS", cursive, sans-serif;
+            font-size:17px;
+        }
+        .imgWrap {
+  position: relative;
+
+}
+        #demo
+        {
+            color:white;
+        }
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  <!--background: rgba(29, 106, 154, 0.72);-->
+    background:#0033cc;
+ color: white;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+        .w3-theme{
+            background-color:orange;
+        }
+        div.roll{
+            background-color: yellow;
+            font-size:15px;
+            color:red;
+        }
+        div.assg {
+            background-color: black;
+            color: white;
+            margin: 0px 0 0 0;
+            padding: 0px;
+        }
+        div.assd {
+            background-color: black;
+            float : left;
+            color: white;
+            margin: 0px 0 10px 0;
+            padding: 0px;
+            width: 140px;
+            height: 360px;
+        }
+        div.new {
+            margin: 0px 0 0px 0;
+            float : left;
+            <!--text-align:center;-->
+            font-size:15px;
+            color:black;
+            margin:0 0 0 0px;
+            width: 270px;
+            height: 650px;
+            background-color:#9999ff;
+        }
+        div.su{
+         height:80px;   
+        }
+        div.news {
+            margin: 0px 0 0px 0;
+            float : right;
+            text-align:center;
+            font-size:15px;
+            color:black;
+            margin:0 0 0 10px;
+            width: 270px;
+            height: 670px;
+        }
+        div.news1 {
+            margin: 0px 0 0px 0;
+            float : right;
+            text-align:center;
+            font-size:15px;
+            color:black;
+            margin:0 0 0 10px;
+            width: 270px;
+            height: 670px;
+        }
+        div.foot{
+            background-color:black;
+            text-align:center;
+            margin: 650px 0 0 0;
+        }
+        div.l{
+            float:right;
+        }
+        #head{
+            position: relative;
+            background-color:#73e600;
+            color:#800000;
+            margin: 0 0 0 0;
+            padding: 18px;
+          text-align:center;
+            font-size:30px;
+            font-style:italic;
+            text-shadow:1px 1px 4px black;
+        }
+        #head img
+        {
+            position: absolute;
+            top: 5px;
+          left: 15px;
+        }
+         #head img2
+        {
+            position: absolute;
+            top: 5px;
+          right: 15px;
+        }
+        
+        div.img1{
+             top: 5px;
+          left: 5px;
+            padding-left: 2cm;
+        }
+        div.img2{
+             top: 20px;
+          right:5px;
+            padding-left: 75%;
+        }
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 85px;
+     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+         .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    <!--text-align:center;-->
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color:red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+        .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: pink;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #9933ff;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    background-color:#ffcc99;
+    color:black;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.mybtn{
+    background-color:black;
+    color:pink;
+}
+
+        /////////////
+
+    </style>
+    <body class="w3-theme">
+        <div class="assg">
+            <div id="head">
+                
+               <a href="http://127.0.0.1:8000/Weather_Final/default/index?">
+                <img  src="http://img.collegepravesh.com/2015/11/IIIT-Chittoor-Logo.jpg" alt="Aditya" width="75" height="60"></a>
+                       
+
+               Weather Station
+                                  <!--img class="img2" src="http://www.clipartpal.com/_thumbs/pd/weather/weather_vane.png" alt="Adi"  width="75" height="60"-->
+
+            </div>
+            <table>
+                <tr>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="w3-dropdown-hover">
+                            <form action="index">
+                                <button class="w3-btn w3-black">Home &nbsp&nbsp<img src="http://findicons.com/files/icons/1261/sticker_system/128/home.png" height="30" width="30"></button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="temperature" >
+                                <button class="w3-btn w3-black">Temperature</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="pressure" >
+                                <button class="w3-btn w3-black">Pressure</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="450">
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="humidity" >
+                                <button class="w3-btn w3-black">Humidity</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td width="550">
+                         <button class="w3-btn w3-black">
+                        <script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+if(nyear<1000) nyear+=1900;
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
+</script>
+<div id="clockbox"></div>
+</button>
+                    </td>
+                    <td>
+                         <div class="w3-dropdown-hover" align="right">
+                            <form action="contactus" >
+                                <button class="w3-btn w3-black">Contact&nbsp Us</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                         <div class="w3-dropdown-hover" align="right">
+                            <form action="aboutus" >
+                                <button class="w3-btn w3-black">About&nbsp Us</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w3-dropdown-hover" align="right">
+                            <form action="signup args=" "" >
+                                <button class="w3-btn w3-black">SignUp</button>
+                            </form>
+                        </div>
+                    </td>
+                    
+                    <td width="5%">
+                        <div class="imgWrap">
+  <!--a href="http://www.facebook.com" target="_blank"-->
+                              <div class="w3-dropdown-hover" align="right">
+                            <form action="http://www.facebook.com" >
+                                <button class="w3-btn w3-black">
+                            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook" width="30" height="30"></button>
+                                </form>
+                        </div>
+                        </a>
+  <p class="imgDescription">Join us on Facebook</p>
+</div>
+                    </td>
+                    <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                    <td width="5%">
+                         <div class="imgWrap">
+  <!--a href="http://www.twitter.com" target="_blank"-->
+                              <div class="w3-dropdown-hover" align="right">
+                            <form action="http://www.twitter.com" >
+                                <button class="w3-btn w3-black">
+                            <img src="http://a2.mzstatic.com/us/r30/Purple49/v4/24/8b/56/248b56c7-143e-a01b-c6cd-9bb8a1641848/icon175x175.png" alt="twitter" width="30" height="30">
+                            </button>
+                                </form>
+                        </div>
+
+                        </a>
+                             <p class="imgDescription">Follow us on Twitter</p>
+</div>
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="roll">
+            <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><font color="red">
+                <i>Place &nbsp : &nbsp Max &nbsp/ &nbsp Min Temp&nbsp,&nbsp&nbsp</i></font>
+                {{ for i in read:}}
+                <font color="blue">{{=i.place}}</font>&nbsp :
+                <font color="green">{{=i.high_temparature}}&nbsp / </font>
+                <font color="black">{{=i.low_temparature}}&nbsp,&nbsp</font>
+                 {{pass}}
+                
+            </marquee>
+        </div>
+        <!--div class="assd">
+            <tr>
+                <form action="temperature">
+                    <button class="w3-btn w3-black">Temprature</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="pressure">
+                    <button class="w3-btn w3-black">Pressure</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Humidity</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Rainfall</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Others</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">Contact Us</button>
+                </form>
+            </tr>
+            <tr>
+                <form action="index">
+                    <button class="w3-btn w3-black">About Us</button>
+                </form>
+            </tr>
+        </div-->
+
+   
+        <div class="new">
+                 
+   
+<tr>
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <center>
+  <button id="myBtn" class="mybtn">Chennai</button><br><br><br><br>
+  <button id="myBtn_1" class="mybtn">Vijayawada</button><br><br><br><br>
+  <button id="myBtn_2" class="mybtn">Amalapuram</button><br><br><br><br>
+  <button id="myBtn_3" class="mybtn">Guntur</button><br><br><br><br>
+  <button id="myBtn_4" class="mybtn">Vishakhaptnam</button>
+  </center>
+</div>
+
+
+<!--span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; Places</span-->
+
+
+<div id="main">
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#x2630; Places</span>
+</div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "285px";
+   // document.getElementById("main").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    //document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Weather Report</h2>
+    </div>
+    <div class="modal-body" >
+      <p>Temperature: 29.6°C</p>
+      <p>Pressure: 1219 hPa</p>
+         <p>Humidity: 40%</p>
+    </div>
+  </div>
+    
+    
+    
+    
+    
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            </tr>
+            
+            
+            <font color="black" >
+                
+                <a href="imd_sensors" >  &nbsp&nbsp&nbsp&#9776;IMD SENSORS</a><br><br>
+                <a href="iiit_sensors" > &nbsp&nbsp&nbsp&#9776; IIIT SENSORS</a><br><br>
+                <a href="abhi" > &nbsp&nbsp&nbsp&#9776; OUR SENSOR</a><br><br>
+                <a href="http://www.iiits.ac.in/" > &nbsp&nbsp&nbsp&#9776; IIIT CHITTOR</a><br>
+                </br></font>
+            
+            
+            
+            <br><br><br><br>
+            <div class="find"><center><br>
+            <form action="find">
+                Enter the city:<input type="text" name="place"></input>
+                <br><br>
+            <button type="submit">
+            Submit
+            </button>
+        </form></center></div>
+            
+        </div>
+        
+        
+        
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+       
+        <div class="news1">
+             <div class="su">
+                 <br>
+                 <img src="http://www.metalvideos.net/Updates.gif" alt="Suma" height="50" width="170">
+</div>
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Ms.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.
+                
+                <br><br><a href="http://www.iiits.ac.in/" >-IIIT CHITTOR</a> </br> </strong></font></center></marquee>
+        </div>
+    
+        <!--div class="news" >
+            <marquee bgcolor="#9999ff" scrollamount="2" direction="up" onmouseover="this.stop();" onmouseout="this.start();" loop="true" height="80%"> <center> <font color="black" ><strong>-Thunderstorms at Chennai<br><br>-The IMD plans to celebrate Environmental Day in association with UNESCO<br><br>-Heavy rains at Tirupati<br> <br>-Mr.Vagdevi inaugurates a sub-station of the IMD at the Nilgiri hills.<br><br>-IIT Madras </br> </strong></font></center></marquee>
+        </div-->
+
+        <div class ="l" id="map" style="width:66%;height:650px"></div>
+   <div class="foot">
+            <font color="white" size="4">
+                Copyrights@123
+            </font>
+        </div>
+     
+        <!--script>
+/*            function myMap() {
+                
+                var myCenter = new google.maps.LatLng(13.55767,80.02949);//SriCity
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: myCenter, zoom: 5};
+                var map = new google.maps.Map(mapCanvas,mapOptions);
+                var marker = new google.maps.Marker({position: myCenter,animation: google.maps.Animation.BOUNCE});
+                marker.setMap(map);
+                var infowindow = new google.maps.InfoWindow({
+                   content: "SriCity"  //respective temperature
+                 });
+                infowindow.open(map,marker);
+                
+                
+                var myCenter = new google.maps.LatLng(28.64321,77.11578);  //Delhi
+                var marker = new google.maps.Marker({position: myCenter,animation: google.maps.Animation.BOUNCE});
+                marker.setMap(map);
+                var infowindow = new google.maps.InfoWindow({
+                   content: "Delhi"  //respective temperature
+                 });
+                infowindow.open(map,marker);
+                
+                
+                var myCenter = new google.maps.LatLng(16.506174,80.648015);//Vijayawada
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(17.385044,78.486671);//Hyderabad
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(12.971599,77.594563);//Bangalore
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(12.295810,76.639381);//Mysuru
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(15.299326,74.123996);//Goa
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                var myCenter = new google.maps.LatLng(9.931233,76.267304);//Kochi
+                var marker = new google.maps.Marker({position: myCenter});
+                marker.setMap(map);
+                
+                google.maps.event.addListener(marker,'click',function() {
+                map.setZoom(9);
+                map.setCenter(marker.getPosition());
+                    
+                    
+               ///////////////////
+                
+              });
+            }*/
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script-->
+
+        <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+      function initMap() {
+        var SriCity = {lat: 13.55767, lng: 80.02949};    // -
+         var Vijayawada = {lat: 16.506174, lng:80.648015};// -1
+          var Hyderabad = {lat:17.385044 , lng:78.486671};// -2
+          var Bangalore = {lat: 12.971599, lng:77.594563};// -3
+          var Mysuru = {lat:12.295810 , lng:76.639381};// -4
+          var Goa = {lat:15.299326 , lng:74.123996 };// -5
+           var Kochi = {lat:9.931233 , lng: 76.267304 };// -6
+          var Delhi = {lat:28.7041, lng: 77.1025 };// -7
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: SriCity
+        });
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Vijayawada
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Hyderabad
+        });
+         var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Bangalore
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Mysuru
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Goa
+        });
+           var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Kochi
+        });
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: Delhi
+        });
+        var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 23.34°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+          var contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+          var contentString2 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+          var contentString3 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+         var contentString4 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+           var contentString5 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+           var contentString6 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+           var contentString7 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Weather Report</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Temperature</b>: 43.45°C</b><br>' +'<b>Pressure</b>: 1231 hPa<br>'+'<b>Humidity</b>: 76% </p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var infowindow1 = new google.maps.InfoWindow({
+          content: contentString1
+        });
+          var infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+        });
+          var infowindow3 = new google.maps.InfoWindow({
+          content: contentString3
+        });
+          var infowindow4 = new google.maps.InfoWindow({
+          content: contentString4
+        });
+           var infowindow5 = new google.maps.InfoWindow({
+          content: contentString5
+        });
+           var infowindow6 = new google.maps.InfoWindow({
+          content: contentString6
+        });
+           var infowindow7 = new google.maps.InfoWindow({
+          content: contentString7
+        });
+        var marker = new google.maps.Marker({
+          position: SriCity,
+          map: map,
+          title: 'SriCity'
+        });
+          var marker1 = new google.maps.Marker({
+          position: Vijayawada,
+          map: map,
+          title: 'Vijayawada'
+        });
+          var marker2 = new google.maps.Marker({
+          position: Hyderabad,
+          map: map,
+          title: 'Hyderabad'
+        });
+          var marker3 = new google.maps.Marker({
+          position: Bangalore,
+          map: map,
+          title: 'Bangalore'
+        });
+          var marker4 = new google.maps.Marker({
+          position: Mysuru,
+          map: map,
+          title: 'Mysuru'
+        });
+          var marker5 = new google.maps.Marker({
+          position: Goa,
+          map: map,
+          title: 'Goa'
+        });
+           var marker6 = new google.maps.Marker({
+          position: Kochi,
+          map: map,
+          title: 'Kochi'
+        });
+           var marker7 = new google.maps.Marker({
+          position: Delhi,
+          map: map,
+          title: 'Delhi'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+          marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+          marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+          marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+          marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+          marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+           marker6.addListener('click', function() {
+          infowindow6.open(map, marker6);
+        });
+           marker7.addListener('click', function() {
+          infowindow7.open(map, marker7);
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFfUYZh9JH4CeOmcvqentnZ5oes1bN7ac&callback=initMap">
+    </script>
+    </body>
+</html>

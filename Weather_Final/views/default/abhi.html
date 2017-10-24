@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+{{for row in TableNames :}}
+    {{=row.Temperature}}
+    {{=row.Pressure}}
+    {{=row.Humidity}}
+    {{pass}}
