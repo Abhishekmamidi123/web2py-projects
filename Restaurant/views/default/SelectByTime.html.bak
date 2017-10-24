@@ -1,0 +1,20 @@
+{{extend 'layout.html'}}
+<a href = "http://127.0.0.1:8000/Restaurant/default/index">
+<button type = "button">
+    Home
+</button>
+</a>
+<center><h1>
+    Select Restaurants by Time
+</h1>
+</center>
+
+{{=Time}}
+<br>
+<h3><font color = "green">
+    Avaialble Restaurants
+          </font>
+</h3>
+{{for iterator in abhi :}}
+<h3>{{=iterator.Restaurant_Name}}</h3>
+{{pass}}

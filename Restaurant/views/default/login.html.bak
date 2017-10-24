@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+<a href = "http://127.0.0.1:8000/Restaurant/default/index">
+<button type = "button">
+    Home
+</button>
+</a>
+<center>
+<h1>
+    Login to your Restaurant
+</h1>
+<br>
+</center>
+{{=Login}}
+<!--{{=Rest}}-->

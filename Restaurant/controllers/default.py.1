@@ -1,0 +1,123 @@
+# -*- coding: utf-8 -*-
+# this file is released under public domain and you can use without limitations
+
+#########################################################################
+## This is a sample controller
+## - index is the default action of any application
+## - user is required for authentication and authorization
+## - download is for downloading files uploaded in the db (does streaming)
+#########################################################################
+Rest = "Restaurant"
+
+def index():
+    Rest_names=db().select(db.Restaurant.ALL,orderby=db.Restaurant.Restaurant_Name)
+#    for iterator in Rest_names :
+    return dict(Rest_names = Rest_names)
+    
+    #return dict(Rest_names=Rest_names)
+
+#    response.flash = T("Hello World")
+    #return dict(message=T('Welcome to web2py!'))
+
+
+def register():
+    Register = SQLFORM.factory(Field('Restaurant',unique = True,requires = IS_NOT_EMPTY()),
+                               Field('Contact_Number',unique = True,requires = IS_INT_IN_RANGE(minimum = 1000000000,maximum = 9999999999)),
+                               Field('Address','text',requires = IS_NOT_EMPTY()),
+                               Field('Open_Time',requires = IS_NOT_EMPTY()),
+                               Field('Close_Time', requires = IS_NOT_EMPTY()),
+                               Field('Login_Name',requires = IS_NOT_EMPTY()),
+                               Field('Password','password',requires = IS_NOT_EMPTY()))
+
+    if Register.process().accepted :
+        db.Restaurant.insert(Restaurant_Name = Register.vars.Restaurant,
+                             Mobile_Number = Register.vars.Contact_Number,
+                             Address = Register.vars.Address,
+                             Open_Time = Register.vars.Open_Time,
+                             Close_Time = Register.vars.Close_Time,
+                             Login_Name = Register.vars.Login_Name,
+                             Password = Register.vars.Password)
+        #redirect(URL("view_contacts"))
+    return dict(Register = Register)
+    
+def login() :
+    Rest = request.vars.Rest
+    Login = SQLFORM.factory(Field('Restaurant',unique = True,requires = IS_NOT_EMPTY()),
+                               Field('Password','password',requires = IS_NOT_EMPTY()))
+    Rests = db().select(db.Restaurant.ALL)
+    flag = 0
+    if Login.process().accepted :
+        for iterator in Rests :
+            if Login.vars.Restaurant == iterator.Restaurant_Name :
+                if Login.vars.Password == iterator.Password :
+                    flag = 1
+                    Rest = iterator.Restaurant_Name
+                    
+                    
+    if flag == 1 :
+        redirect(URL("menu"))
+        return dict(Login = Login,Rest = Rest)
+    return dict(Login = Login,Rest = Rest)
+    
+def menu() :
+    Rest = request.vars.Rest
+    response.flash = T("Hello World")
+    return dict(message=Rest)
+
+def Add_Item() :
+        
+    Add = SQLFORM.factory(Field('Item_name',unique = True,requires = IS_NOT_EMPTY()),
+                          Field('Price_in_Rs',requires = IS_NOT_EMPTY()))
+    if Add.process().accepted :
+        db.Menu.insert(Restaurant_Name=Rest , Item_Name=Add.vars.Item_name , Price=Add.vars.Price_in_Rs)
+        redirect(URL("menu"))
+    return dict(Add = Add)
+
+def Edit_Item() :
+    flag = 0
+    Edit = SQLFORM.factory(Field('Item_name',unique = True,requires = IS_NOT_EMPTY()),Field('Price_in_Rs',unique = True,requires = IS_NOT_EMPTY()))
+    item_names = db().select(db.Menu.ALL,orderby = db.Menu.Item_Name)
+    if Edit.process().accepted :
+        for iterator in item_names :
+            if Edit.vars.Item_name == iterator.Item_Name and iterator.Restaurant_Name == Rest :
+                db(db.Menu.Item_Name == Edit.vars.Item_name).update(Price = Edit.vars.Price_in_Rs)
+                flag = 1
+                redirect(URL("menu"))
+        if flag!=1 :
+            response.flash = "Can't find your item"
+            flag = 0
+    return dict(Edit = Edit)
+
+def Delete_Item() :
+    flag = 0
+    Delete = SQLFORM.factory(Field('Item_name',unique = True,requires = IS_NOT_EMPTY()))
+    item_names = db().select(db.Menu.ALL,orderby = db.Menu.Item_Name)
+    if Delete.process().accepted :
+        for iterator in item_names :
+            if Delete.vars.Item_name == iterator.Item_Name and iterator.Restaurant_Name == Rest :
+                response.flash = "Deleted successfully"
+                db(db.Menu.Item_Name == Delete.vars.Item_name).delete()
+                flag = 1
+                redirect(URL("menu"))
+        if flag!=1 :
+            response.flash = "Can't find your item"
+            flag = 0
+    return dict(Delete = Delete)
+
+def search2() :
+    rest = request.vars.rest
+    names = db(db.Restaurant.Restaurant_Name == rest).select()
+    return locals
+
+def search1():
+    rest=request.vars.rest
+    names=db(db.Rest.Restname==rest).select()
+    #naga=db(db.menu.item==item).select(db.menu.ALL)
+    hai=db.executesql('select * from menu where menu.Rest="%s"'%(rest))
+    #sai=db().select(db.menu.ALL,orderby=db.menu.Rest)
+    return locals()
+
+
+#db.define_table( "Restaurant" , Field("Restaurant_Name",requires = IS_NOT_EMPTY(),unique=True) , Field("Login_Name",requires = IS_NOT_EMPTY() ) , Field("Password",requires = IS_NOT_EMPTY()) , Field("Address",'text',requires = IS_NOT_EMPTY()) , Field("Mobile_Number",requires = IS_INT_IN_RANGE(minimum = 1000000000,maximum = 9999999999)) , Field("Open_Time",requires = IS_NOT_EMPTY()) , Field("Close_Time",requires = IS_NOT_EMPTY()))
+
+#    ,Field('Address'),Field('Open Time'),Field('Close Time'),Field('Login Name'),

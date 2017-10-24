@@ -1,0 +1,15 @@
+{{extend 'layout.html'}}
+
+<a href = "http://127.0.0.1:8000/Restaurant/default/menu/{{=Rest[0]}}">
+<button type = "button">
+    Back
+</button>
+</a>
+<center>
+<h1>
+    Edit Item
+</h1>
+<br>
+</center>
+{{=Edit}}
+<!--{{=Rest[0]}}-->

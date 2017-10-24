@@ -1,0 +1,28 @@
+{{extend 'layout.html'}}
+<body>
+    <style>
+.button{
+    display : inline;
+    float : right;
+    }
+    </style>
+</body>
+
+<center>
+<h1>
+    Register your Restaurant
+</h1>
+<br>
+</center>
+<a href = "http://127.0.0.1:8000/Restaurant/default/index">
+<button type = "button">
+    Home
+</button>
+</a>
+
+<form action="http://127.0.0.1:8000/Restaurant/default/login">
+<div class="button" ><button>Login</button></div>
+</form>
+<br>
+
+{{=Register}}

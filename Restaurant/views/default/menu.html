@@ -1,0 +1,37 @@
+{{extend 'layout.html'}}
+<body>
+    <style>
+.button{
+    display : inline;
+    float : right;
+    }
+    </style>
+</body>
+
+<form action="http://127.0.0.1:8000/Restaurant/default/index">
+<div class="button" ><button  margin=200px>Logout</button></div>
+</form>
+
+    <center>
+</a>
+
+    <h1>Welcome to {{=Rest[0]}}</h1>
+<br>
+<br>
+<a href = "http://127.0.0.1:8000/Restaurant/default/Add_Item/{{=Rest[0]}}">
+<button type = "button">
+    Add Item
+</button>
+</a>
+&nbsp&nbsp
+<a href = "http://127.0.0.1:8000/Restaurant/default/Edit_Item/{{=Rest[0]}}" >
+<button type = "button">
+    Edit Item
+</button>
+</a>
+&nbsp&nbsp
+<a href = "http://127.0.0.1:8000/Restaurant/default/Delete_Item/{{=Rest[0]}}">
+<button type = "button">
+    Delete Item
+</button>
+    </a></center>

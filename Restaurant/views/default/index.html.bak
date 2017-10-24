@@ -1,0 +1,37 @@
+{{extend 'layout.html'}}
+<head>
+    <center><h2><font color = "#cc33ff"> Welcome!!! </font></h2></center>
+</head>
+<!--body background="C:\Users\abhishek\Desktop\download.jpeg"-->
+<body bgcolor = "#ffcc99">
+    <style>
+.button{
+    float: right;
+    }
+    </style>
+
+&nbsp&nbsp
+
+<form action="login">
+<div class="button" ><button>Login</button></div>
+</form>
+
+<form action="register">
+<div class="button"><button>Register</button><br></div>
+</form>
+
+<form action="deregister">
+<div class="button"><button>Deregister</button><br></div>
+</form>
+
+<form action="SelectByTime">
+<div class="button"><button>Select Restaurants by time</button><br></div>
+</form>
+
+<br><br>
+<h2> Available Restaurants </h2>
+<br>
+{{ for row in Rest_names:}}
+<h1><a href="http://127.0.0.1:8000/Restaurant/default/Menu_Item/{{=row.Restaurant_Name}}" <button>{{=row.Restaurant_Name}}</button--></a></h1>
+{{pass}}
+</body>

@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<center>
+    <h1>
+        Deregister your Account
+    </h1>
+</center>
+<a href = "http://127.0.0.1:8000/Restaurant/default/index">
+<button type = "button">
+    Back
+</button>
+</a>
+{{=Deregister}}
+{{=Rests}}

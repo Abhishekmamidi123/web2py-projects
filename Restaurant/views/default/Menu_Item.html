@@ -1,0 +1,42 @@
+{{extend 'layout.html'}}
+<a href = "http://127.0.0.1:8000/Restaurant/default/index">
+<button type = "button">
+    Back
+</button>
+</a>
+
+<center><h1>Details of {{=Rest}}</h1></center>
+<br>
+<table class = "table" id="customers">
+    <tr bgcolor = #80ff80>
+        <th>Open_Time</th>
+        <th>Close_Time</th>
+        <th>Address</th>
+        <th>Mobile_Number</th>
+    </tr>
+    {{for row in rest:}}
+    <tr bgcolor = #80ff80>
+        <td>{{=row.Open_Time}}</td>
+        <td>{{=row.Close_Time}}</td>
+        <td>{{=row.Address}}</td>
+        <td>{{=row.Mobile_Number}}</td>
+    </tr>
+    {{pass}}
+</table>
+<center>
+    <h2>
+        Menu
+    </h2>
+</center>
+<table class = "table" id="customers">
+    <tr bgcolor = "#ff80bf">
+        <th>Item Name</th>
+        <th>Price</th>
+    </tr>
+    {{for row in rowes:}}
+    <tr bgcolor = "#ff80bf">
+        <td>{{=row.Item_Name}}</td>
+        <td>{{=row.Price}}</td>
+    </tr>
+    {{pass}}
+</table>

@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+
+<h1>{{=rest}}</h1><br><br>
+<body>
+{{for nam in names:}}
+    <h3>
+        {{=nam.Open_Time}}
+    </h3>
+    {{pass}}
+   <!--h3>Contact_Info : {{=nam.email}}&nbsp&nbsp&nbsp&nbsp&nbsp
+    {{=nam.phoneno}}<br>
+   Opentime : {{=nam.opentime}}<br>
+    Closetime : {{=nam.closetime}}<br>
+       Addrerss : {{=nam.Address}}<br></h3-->
+{{pass}}
+   
+   <!--br><br><center> 
+    {{for hi in hai:}}
+<h4>{{=hi[2]}}&nbsp&nbsp&nbsp&nbsp{{=hi[3]}}&nbsp&nbsp&nbsp&nbsp</h4-->
+    </center>
+</body>
